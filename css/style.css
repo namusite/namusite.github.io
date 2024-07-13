@@ -277,6 +277,7 @@ h6 {
   background: #50d8af;
   border: 2px solid #50d8af;
 }
+
 .btn-projects:hover {
   background: none;
   color: #50d8af;
@@ -709,6 +710,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-left: 10px;
   margin-bottom: 0;
   line-height: 24px;
+text-align: left;
   /* white-space: nowrap; */
   /* overflow: hidden; */
   /* max-lines: 0; */
@@ -720,6 +722,21 @@ body.mobile-nav-active #mobile-nav-toggle {
   /* -webkit-box-orient: horizontal; */
 }
 
+@media screen and (min-width: 525px) {
+  #services .box {
+    height: 550px;
+  }
+}
+@media screen and (min-width: 746px) {
+  #services .box {
+    height: 330px;
+  }
+}
+@media screen and (min-width: 992px) {
+  #services .box {
+    height: 400px;
+  }
+}
 @media (max-width: 767px) {
   #services .box .box {
     margin-bottom: 20px;
