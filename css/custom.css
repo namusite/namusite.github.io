@@ -1365,8 +1365,8 @@ ul {
     position: relative;
     min-width: 5em;
     width: 350px;
-    max-width: 150px;
-    min-width: 150px;
+    /* max-width: 150px; */
+    /* min-width: 150px; */
     /* height: 250px; */
     min-height: 5em;
     border-radius: 4px;
@@ -1467,7 +1467,30 @@ ul {
 .paper_front {
     transform: translate3d(0, 0, 1em);
 }
+@media screen and (max-width: 496px) {
+    .paper_card {
+        position: relative;
+        /* max-width: 50px; */
+        /* min-width: 50px; */
+        width: 100%;
+        height: 100px;
+        /* height: 10pgccx; */
+        margin: auto;
+        overflow: hidden;
+    
+    
+    .paper_text_m {
+        font-size: 0.3em;
+    }
 
+    .paper_text_s {
+        font-size: 0.3em;
+    }
+
+    .paper_text_d {
+        font-size: 0.3em;
+    }
+}
 
 @media screen and (min-width: 496px) {
 
