@@ -254,7 +254,7 @@
 
 .seven h1 {
     text-align: center;
-    font-size: 40px;
+    font-size: 20px;
     font-weight: 400;
     color: #222;
     letter-spacing: 1px;
@@ -283,6 +283,10 @@
 @media screen and (min-width: 496px) {
     .seven h1 {
         font-size: 20px;
+    }
+    .pos_intro {
+        font-size: 13px;
+        text-align: center;
     }
 
     .section-header h2 {
@@ -321,6 +325,10 @@
     .profile-cards1 .card1 .card-description1 .card-description-company1 {
         font-size: 2.5vw;
     }
+    .pos_intro {
+        font-size: 16px;
+        text-align: center;
+    }
 
 }
 
@@ -328,7 +336,42 @@
     .seven h1 {
         font-size: 35px;
     }
+    .pos_intro {
+        font-size: 20px;
+        text-align: center;
+    }
+    .profile-cards1 .card1 .card-description1 .card-description-profession1 {
+        font-size: 2.5vw;
+    }
 
+    .profile-cards1 .card1 .card-description1 .card-description-title1 {
+        font-size: 3.0vw;
+    }
+
+    .profile-cards1 .card1 .card-description1 .card-description-company1 {
+        font-size: 2.0vw;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .seven h1 {
+        font-size: 35px;
+    }
+    .pos_intro {
+        font-size: 20px;
+        text-align: center;
+    }
+    .profile-cards1 .card1 .card-description1 .card-description-profession1 {
+        font-size: 1.0vw;
+    }
+
+    .profile-cards1 .card1 .card-description1 .card-description-title1 {
+        font-size: 1.2vw;
+    }
+
+    .profile-cards1 .card1 .card-description1 .card-description-company1 {
+        font-size: 0.8vw;
+    }
 }
 
 .member {
@@ -1425,27 +1468,8 @@ ul {
     transform: translate3d(0, 0, 1em);
 }
 
-@media screen and (min-width:992px) {
-    .paper_card_form {
-        position: relative;
-        max-width: 250px;
-        min-width: 250px;
-        width: 250px;
-        height: 170px;
-    }
-
-    .paper_card_form img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-
-    }
-}
 
 @media screen and (min-width: 496px) {
-    .paper_card {
-        width: 90%;
-    }
 
     .paper_text_m {
         font-size: 0.8em;
@@ -1480,6 +1504,24 @@ ul {
     }
 
 }
+
+@media screen and (min-width:992px) {
+    .paper_card_form {
+        position: relative;
+        max-width: 250px;
+        min-width: 250px;
+        width: 250px;
+        height: 170px;
+    }
+
+    .paper_card_form img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+    }
+}
+
 
 @media screen and (min-width: 767px) {
     #gl-left_border {
