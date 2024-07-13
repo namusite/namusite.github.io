@@ -63,6 +63,7 @@
     cursor: pointer;
     color: #800000;
 }
+
 /* 
 .profile-cards1 .card1 .card-description1 .card-description-company1:hover {
     /* text-decoration: underline; */
@@ -278,29 +279,58 @@
     background-color: #f8f8f8;
     /* left: 100px; */
 }
+
+@media screen and (min-width: 496px) {
+    .seven h1 {
+        font-size: 20px;
+    }
+
+    .section-header h2 {
+        font-size: 20px;
+    }
+
+    .profile-cards1 .card1 .card-description1 .card-description-title1 {
+        font-size: 4vw;
+    }
+
+    .profile-cards1 .card1 .card-description1 .card-description-company1 {
+        font-size: 2.5vw;
+        padding: 10px;
+    }
+
+    .profile-cards1 .card1 .card-description1 .card-description-profession1 {
+        font-size: 3vw;
+        font-style: oblique;
+        padding: 10px;
+    }
+}
+
 @media screen and (min-width: 546px) {
     .seven h1 {
-        font-size: 25px;
+        font-size: 24px;
     }
 
     .profile-cards1 .card1 .card-description1 .card-description-profession1 {
         font-size: 3vw;
     }
+
     .profile-cards1 .card1 .card-description1 .card-description-title1 {
         font-size: 4vw;
     }
+
     .profile-cards1 .card1 .card-description1 .card-description-company1 {
-    font-size: 2.5vw;
+        font-size: 2.5vw;
     }
-    
+
 }
 
 @media screen and (min-width: 767px) {
     .seven h1 {
         font-size: 35px;
     }
-    
+
 }
+
 .member {
     gap: 20px;
     overflow: hidden;
@@ -1304,13 +1334,13 @@ ul {
 
 .paper_card_form img {
     border-radius: 4px;
-        /* height: 150px; */
+    /* height: 150px; */
     /* height: 100%; */
     margin: auto;
     justify-content: center;
     width: 100%;
     height: 100%;
-    object-fit:cover
+    object-fit: cover
 }
 
 .paper_card_data {
@@ -1404,53 +1434,73 @@ ul {
         height: 170px;
     }
 
-.paper_card_form img {
-    width: 100%;
-    height: 100%;
-    object-fit:cover;
+    .paper_card_form img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
 
+    }
 }
 
+@media screen and (min-width: 496px) {
+    .paper_card {
+        width: 90%;
+    }
+
+    .paper_text_m {
+        font-size: 0.8em;
+    }
+
+    .paper_text_s {
+        font-size: 0.8em;
+    }
+
+    .paper_text_d {
+        font-size: 0.8em;
+    }
 }
-@media  screen and (min-width: 546px) {
+
+@media screen and (min-width: 546px) {
     .paper_text_m {
         font-size: 1.1em;
     }
-    
+
 }
 
-@media  screen and (min-width: 767px) {
+@media screen and (min-width: 767px) {
     .paper_text_m {
         font-size: 1.3em;
     }
-    
+
 }
-@media  screen and (min-width: 767px) {
+
+@media screen and (min-width: 767px) {
     .paper_text_m {
         font-size: 1.5em;
     }
-    
+
 }
 
-@media  screen and (min-width: 767px) {
+@media screen and (min-width: 767px) {
     #gl-left_border {
         border-left: 0;
     }
-   #gl-right_border {
-    border-right: 0;
-   }
+
+    #gl-right_border {
+        border-right: 0;
+    }
 }
 
 @media screen and (min-width: 746px) {
     .card-description-title1 {
         font-size: 20px;
         /* font-weight: bold; */
-    
+
     }
+
     .card-description-profession1 {
 
         font-size: 1.0rem;
     }
-    
-}
 
+}
