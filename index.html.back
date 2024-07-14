@@ -30,58 +30,7 @@
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
-
-  <style>
-    .carousel-item>img {
-      bottom: 0;
-      /* transform: translate(-50%, -50%); */
-      min-width: 100%;
-      /* max-height: 600px; */
-      /* min-height: 600px; */
-      /* height: 40rem; */
-      margin: 0 auto;
-      object-fit: cover;
-    }
-
-    .carousel-item:after {
-      content: "";
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: rgba(255, 255, 255, 0.6);
-      height: 100%;
-    }
-
-
-    .carousel-fade .carousel-item {
-      opacity: 0;
-      /* transition-duration: 1s ease-in-out; */
-      /* transition-property: opacity; */
-      transition: opacity 0.5s linear;
-    }
-
-    .carousel-fade .carousel-item.active,
-    .carousel-fade .carousel-item-next.carousel-item-left,
-    .carousel-fade .carousel-item-prev.carousel-item-right {
-      opacity: 1;
-    }
-
-    .carousel-fade .active.carousel-item-left,
-    .carousel-fade .active.carousel-item-right {
-      opacity: 0;
-    }
-
-    .carousel-fade .carousel-item-next,
-    .carousel-fade .carousel-item-prev,
-    .carousel-fade .carousel-item.active,
-    .carousel-fade .active.carousel-item-left,
-    .carousel-fade .active.carousel-item-prev {
-      transform: translateX(0);
-      transform: translate3d(0, 0, 0);
-    }
-  </style>
+  <!-- <link href="css/custom.css" rel="stylesheet"> -->
 
   <!-- =======================================================
     Theme Name: Reveal
@@ -98,10 +47,9 @@
     }
 
     .btn-get-started:hover {
-      background: #000;
-      color: #a9aebb;
-    }
-
+  background:#000;
+  color: #a9aebb;
+}
     /* styles for '...' */
   </style>
 </head>
@@ -150,7 +98,7 @@
         <li><a href="gallery.html">Gallery</a></li>
         <li class="menu-has-children"><a href="">More</a>
           <ul>
-            <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html">Contact</a></li>
             <li><a href="#">SNBNCBS</a></li>
             <li><a href="#">GitHub</a></li>
           </ul>
@@ -165,23 +113,19 @@
   ============================-->
   <section id="intro">
 
-    <div id="carouselExampleFade" class="carousel slide carousel-fade wow" data-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active justify-content-center" style="margin: auto;">
-          <img src="/img/snbncbs2.png" class="d-block w-100 h-100" alt="...">
-        </div>
-        <div class="carousel-item justify-content-center">
-          <img src=" /img/group2.png" class="d-block w-100 h-100" alt="img.png">
-        </div>
+    <!--     <div class="intro-content">
+    </div> -->
+
+    <div id="intro-carousel" class="owl-carousel">
+      <div class="item" style="background-image: url('img/group5.png');"></div>
+      <div class="item" style="background-image: url('img/group2.png');"></div>
+      <div class="item"
+        style="background-image: url('https://lh3.googleusercontent.com/p/AF1QipNiHAmCHkIiSCIbruEeWb0VDQVXul1rAz1-8Oqd=s680-w680-h510');">
       </div>
+      <div class="item" style="background-image: url('img/group1.png');"></div>
+      <div class="item" style="background-image: url('img/group4.jpg');"></div>
     </div>
-    <div class=" intro-content">
-      <h2>Computational Bio-Physical Chemistry Group!</h2>
-      <!--  <div>
-        <a href="#about" class="btn-get-started scrollto">Get Started</a>
-        <a href="#portfolio" class="btn-projects scrollto">Our Projects</a>
-      </div> -->
-    </div>
+
   </section>
 
   <!-- #intro -->
@@ -193,8 +137,8 @@
     ============================-->
     <section id="about" class="wow fadeInUp">
       <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-6 about-img" style="margin: auto;">
+        <div class="row">
+          <div class="col-lg-6 about-img">
             <img src="img/Combined.png" alt="">
           </div>
 
@@ -208,12 +152,9 @@
                 Welcome to the Computational Biophysical Chemistry group at SNBNCBS, Department of Chemical and
                 Biological Sciences. We are a multidisciplinary team merging expertise from Physics, Chemistry, and
                 Biotechnology. Our research focuses on applying advanced computational methods rooted in statistical
-                mechanics to solve interdisciplinary challenges in chemistry, physics, and biology. Using a
-                molecular
-                thermodynamics approach, we investigate molecular interactions and dynamics from small molecules
-                like
-                water to large biomolecular assemblies and amphiphilic molecule self-assembly. Join us as we explore
-                the
+                mechanics to solve interdisciplinary challenges in chemistry, physics, and biology. Using a molecular
+                thermodynamics approach, we investigate molecular interactions and dynamics from small molecules like
+                water to large biomolecular assemblies and amphiphilic molecule self-assembly. Join us as we explore the
                 forefront of these fields and drive transformative discoveries.
               </li>
 
@@ -232,14 +173,11 @@
         <div class="section-header">
           <h2 style="text-transform: none;">What we do</h2>
           <p style="line-height: 2.0em;">
-            The broad area of our research is computational molecular biophysics and theoretical physical chemistry.
-            The
+            The broad area of our research is computational molecular biophysics and theoretical physical chemistry. The
             primary goal is to employ state of the art computational methodologies primarily based on statistical
             mechanics to solve realistic problems in the interdisciplinary areas of chemistry, physics and biology.
-            Overall, we take an approach of molecular thermodynamics to connect molecular interactions and dynamics
-            to
-            their function and properties. We work on a wide range of problems starting from small molecules (as
-            small
+            Overall, we take an approach of molecular thermodynamics to connect molecular interactions and dynamics to
+            their function and properties. We work on a wide range of problems starting from small molecules (as small
             as water!) to large biomolecular assemblies and self-assembly of amphiphilic molecules.
           </p>
         </div>
@@ -256,17 +194,13 @@
               <h4 class="title"><a href="">(Bio)molecular recognition and signalling</a></h4>
               <div>
 
-                <p class="description">
-                  Allosteric regulation is a crucial component in biochemical pathways, where ligand binding to an
-                  allosteric site modulates the enzymatic activity at a distant functional site. There is rapid
-                  growth
-                  in
-                  interest toward rational design of allosteric drugs. PDZ domain proteins (frequently encountered
-                  in
-                  signaling protein complexes) are classic examples of allostery without significant structural
-                  changes
-                  (dynamic allostery), where ligand binding leads to modulation in distal...
-                </p>
+              <p class="description">
+                Allosteric regulation is a crucial component in biochemical pathways, where ligand binding to an
+                allosteric site modulates the enzymatic activity at a distant functional site. There is rapid growth in
+                interest toward rational design of allosteric drugs. PDZ domain proteins (frequently encountered in
+                signaling protein complexes) are classic examples of allostery without significant structural changes
+                (dynamic allostery), where ligand binding leads to modulation in distal...
+              </p>
               </div>
             </div>
           </div>
@@ -277,15 +211,14 @@
                 <img
                   src="https://pubs.rsc.org/en/Image/Get?imageInfo.ImageType=GA&imageInfo.ImageIdentifier.ManuscriptID=C6CP04378J&imageInfo.ImageIdentifier.Year=2016">
               </div>
-              <h4 class="title" style="color:red;"><a href="" style="color: darkblue;">Context dependent properties
-                  of
-                  interfacial and confined water</a></h4>
+              <h4 class="title" style="color:red;"><a href="" style="color: darkblue;">Context dependent properties of interfacial and confined water</a></h4>
               <p class="description" style="color:midnightblue;">
                 Water confined within reverse micelles (RMs) exhibits distinct properties: "interfacial water" with
                 slowed dynamics and "core water" resembling bulk water depending on RM size
                 . Using molecular dynamics simulations, we explore these differences and compare them with
-                water-in-oil nanodroplets. Results show that RM' s charged interface significantly affects structural
-                ordering and dynamics through electrostatic and hydrogen bonding... </p>
+                water-in-oil nanodroplets. Results show that RM's charged interface significantly affects structural
+                ordering and dynamics through electrostatic and hydrogen bonding...
+              </p>
             </div>
           </div>
 
@@ -300,10 +233,8 @@
               <p class="description block-with-text" id="trunc3">
                 Using approximately 65 μs of replica exchange molecular dynamics simulations, we have constructed
                 temperature-dependent conformational free energy landscapes for human prion protein. These reveal
-                multiple metastable states stabilized by non-native contacts and hydrogen bonds, facilitating
-                protein
-                misfolding. We identified metastable states with high β-content (∼30–40%) and low α-content
-                (∼10–20%),
+                multiple metastable states stabilized by non-native contacts and hydrogen bonds, facilitating protein
+                misfolding. We identified metastable states with high β-content (∼30–40%) and low α-content (∼10–20%),
                 potentially precursors to PrPSC oligomers. These states involve the unstructured...
               </p>
             </div>
@@ -316,16 +247,13 @@
                 <img
                   src="https://pubs.acs.org/cms/10.1021/acs.jpcb.8b02285/asset/images/medium/jp-2018-02285y_0008.gif">
               </div>
-              <h4 class="title"><a href="">Nucleation and growth in the context of phase transition like
-                  phenomena</a>
+              <h4 class="title"><a href="">Nucleation and growth in the context of phase transition like phenomena</a>
               </h4>
               <p class="description">
                 In experimental studies, it has been observed that the presence of sodium dodecyl sulfate (SDS)
                 significantly increases the kinetics of hydrate formation and the final water-to-hydrate conversion
-                ratio. In this study, we intend to understand the molecular mechanism behind the effect of SDS on
-                the
-                formation of methane hydrate through molecular dynamics simulation. Hydrate formation conditions
-                similar
+                ratio. In this study, we intend to understand the molecular mechanism behind the effect of SDS on the
+                formation of methane hydrate through molecular dynamics simulation. Hydrate formation conditions similar
                 to that of...
               </p>
             </div>
@@ -333,7 +261,7 @@
 
         </div>
         <div class="" style="display: flex; justify-content: center;">
-          <a href="research.html" class="btn-get-started scrollto" style="color: aliceblue;">More!</a>
+        <a href="research.html" class="btn-get-started scrollto" style="color: aliceblue;">More!</a>
         </div>
       </div>
     </section><!-- #services -->
