@@ -175,10 +175,50 @@
       transform: scale(1.03);
   }
 
+  #services p {
+      font-size: 22px;
+      line-height: 1.8;
+  }
+
   #services .box p {
       font-size: 25px;
       color: #0c2e8a;
-      line-height: 1.2;
+      line-height: 1.0;
+  }
+
+  @media screen and (min-width: 300px) {
+      #services .box p {
+          font-size: 12px;
+      }
+
+      #services .box h4 {
+          font-size: 15px;
+
+      }
+  }
+
+  @media screen and (min-width: 400px) {
+      #services .box p {
+          font-size: 20px;
+      }
+
+      #services .box h4 {
+          font-size: 20px;
+
+      }
+
+  }
+
+  @media screen and (min-width: 776px) {
+      #services .box p {
+          font-size: 25px;
+      }
+
+      #services .box h4 {
+          font-size: 32px;
+
+      }
+
   }
 
   #my-research {
