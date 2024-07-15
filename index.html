@@ -32,197 +32,9 @@
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
-
-  <style>
-    .carousel-item>img {
-      bottom: 0;
-      /* transform: translate(-50%, -50%); */
-      min-width: 100%;
-      /* max-height: 600px; */
-      /* min-height: 600px; */
-      /* height: 40rem; */
-      margin: 0 auto;
-      object-fit: cover;
-    }
-
-    .carousel-item:after {
-      content: "";
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: rgba(255, 255, 255, 0.6);
-      height: 100%;
-    }
+  <link href="css/home.css" rel="stylesheet">
 
 
-    .carousel-fade .carousel-item {
-      opacity: 0;
-      /* transition-duration: 1s ease-in-out; */
-      /* transition-property: opacity; */
-      transition: opacity 0.5s linear;
-    }
-
-    .carousel-fade .carousel-item.active,
-    .carousel-fade .carousel-item-next.carousel-item-left,
-    .carousel-fade .carousel-item-prev.carousel-item-right {
-      opacity: 1;
-    }
-
-    .carousel-fade .active.carousel-item-left,
-    .carousel-fade .active.carousel-item-right {
-      opacity: 0;
-    }
-
-    .carousel-fade .carousel-item-next,
-    .carousel-fade .carousel-item-prev,
-    .carousel-fade .carousel-item.active,
-    .carousel-fade .active.carousel-item-left,
-    .carousel-fade .active.carousel-item-prev {
-      transform: translateX(0);
-      transform: translate3d(0, 0, 0);
-    }
-
-    /*
-
-Tutorial:
-https://www.roboleary.net/animation/2022/10/31/how-to-make-a-slick-animation-schitts-creek-title-sequence.html
-
-Part of Title Sequences collection:
-https://codepen.io/collection/nNmwgP
-
-Source code:
-https://github.com/robole/title-sequences
-
-*/
-
-    /* @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600"); */
-
-
-    @keyframes pop-word {
-      to {
-        transform: rotateX(0);
-      }
-    }
-
-    @keyframes show {
-      to {
-        opacity: 1;
-      }
-    }
-
-    @keyframes bar-scale {
-      to {
-        transform: scaleY(1);
-      }
-    }
-
-    @keyframes sparkle {
-      0% {
-        transform: scale(0);
-      }
-
-      60% {
-        transform: scale(1) translate(4px, 1px) rotate(8deg);
-      }
-
-      100% {
-        transform: scale(0) translate(4px, 1px) rotate(8deg);
-      }
-    }
-
-    @keyframes shimmer {
-      to {
-        text-shadow: 0 0 8px red;
-      }
-    }
-
-    .myTitle {
-      color: #0c2e8a;
-      font-family: "Playfair Display", Vidaloka, serif;
-      font-size: 7rem;
-      font-weight: 500;
-      line-height: 0.85;
-      perspective: 1000px;
-      /* text-shadow: rgb(216, 232, 5) 0 0 10px; */
-      text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-    }
-
-    .word {
-      display: block;
-
-      animation: show 0.01s forwards, pop-word 1.5s forwards;
-      animation-timing-function: cubic-bezier(0.14, 1.23, 0.33, 1.16);
-      opacity: 0;
-
-      transform: rotateX(120deg);
-      transform-origin: 50% 100%;
-    }
-
-    .word:nth-of-type(2) {
-      padding: 0 2rem;
-
-      animation-delay: 1.5s;
-
-      color: #50d8af;
-      /* text-shadow: rgb(1, 24, 110) 0 0 10px; */
-      text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-
-
-    }
-
-
-    @media screen and (max-width: 600px) {
-      .myTitle {
-        font-size: 5rem;
-      }
-    }
-
-    @media screen and (max-width: 500px) {
-      .myTitle {
-        font-size: 4rem;
-        text-shadow: -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000, 0.5px 0.5px 0 #000;
-      }
-
-      .word:nth-of-type(2) {
-        text-shadow: -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000, 0.5px 0.5px 0 #000;
-      }
-    }
-
-    @media screen and (max-width: 400px) {
-      .myTitle {
-        font-size: 3rem;
-        text-shadow: -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000, 0.5px 0.5px 0 #000;
-      }
-
-      .word:nth-of-type(2) {
-        text-shadow: -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000, 0.5px 0.5px 0 #000;
-      }
-    }
-  </style>
-
-  <!-- =======================================================
-    Theme Name: Reveal
-    Theme URL: https://bootstrapmade.com/reveal-bootstrap-corporate-template/
-    Author: BootstrapMade.com
-    License: https://bootstrapmade.com/license/
-  ======================================================= -->
-
-
-  <style>
-    .outline {
-      border: #000 solid 4px;
-      box-shadow: 8px 8px 0 #000;
-    }
-
-    .btn-get-started:hover {
-      background: #000;
-      color: #a9aebb;
-    }
-
-    /* styles for '...' */
-  </style>
 </head>
 
 <body id="body">
@@ -250,18 +62,15 @@ https://github.com/robole/title-sequences
     Header
   ============================-->
   <header id="header">
-    <div class="container">
+    <div class="container-fluid" style="width:85%">
 
       <div id="logo" class="pull-left">
         <h1><a href="#body" class="scrollto">SC<span>Lab</span><sup style="color: crimson;">@SNBNCBS</sup></a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="#body"><img src="img/logo.png" alt="" title="" /></a>-->
       </div>
 
       <nav id="nav-menu-container"">
         <ul class=" nav-menu">
         <li class="menu-active"><a href="#">Home</a></li>
-        <!-- <li><a href="#about">About Us</a></li> -->
         <li><a href="research.html">Research</a></li>
         <li><a href="publication.html">Publication</a></li>
         <li><a href="members.html">Team</a></li>
@@ -275,35 +84,21 @@ https://github.com/robole/title-sequences
           </ul>
         </li>
         </ul>
-      </nav><!-- #nav-menu-container -->
+      </nav>
+      <!-- #nav-menu-container -->
     </div>
-  </header><!-- #header -->
+  </header>
+  <!-- #header -->
 
   <!--==========================
     Intro Section
   ============================-->
   <section id="intro">
-
-    <!--     <div id="carouselExampleFade" class="carousel slide carousel-fade wow" data-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active justify-content-center" style="margin: auto;">
-          <img src="/img/snbncbs2.png" class="d-block w-100 h-100" alt="...">
-        </div>
-        <div class="carousel-item justify-content-center">
-          <img src=" /img/group2.png" class="d-block w-100 h-100" alt="img.png">
-        </div>
-      </div>
-    </div> -->
     <div class=" intro-content">
       <h1 class="myTitle">
         <span class="word">Computational Bio-physical</span>
         <span class="word">Chemistry Group</span>
       </h1>
-      <!-- <h2>Computational Bio-Physical Chemistry Group!</h2> -->
-      <!--  <div>
-        <a href="#about" class="btn-get-started scrollto">Get Started</a>
-        <a href="#portfolio" class="btn-projects scrollto">Our Projects</a>
-      </div> -->
     </div>
   </section>
 
@@ -314,47 +109,51 @@ https://github.com/robole/title-sequences
     <!--==========================
       About Section
     ============================-->
-    <section id="about" class="wow fadeInUp">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-6 about-img" style="margin: auto;">
-            <img src="img/Combined.png" alt="">
+    <section id="about" class="wow fadeInUp" style="background-color: #e2e8f0;">
+      <div class="container-fluid" style="width: 85%;">
+        <div class="row" id="about_section" style="margin: auto;">
+          <div class="col-lg-5 about-img" style="position: relative;">
+            <img src="img/Combined.png" alt="" style="position: absolute;
+            margin: auto;
+            height: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;">
           </div>
 
-          <div class="col-lg-6 content" style="margin: auto;">
-            <h2>Who we are</h2>
+          <div class="col-lg-6 content" id="my-intro">
+            <div class="my_section-title">
+              <h2 class="title" style="font-family: 'Playfair Display';">Who we are</h2>
+            </div>
             <h3>CBS Department, SNBNCBS, Kolkata.</h3>
 
-            <ul>
-              <li style="line-height: 2.0em;">
+            <p class="my-text">
 
-                Welcome to the Computational Biophysical Chemistry group at SNBNCBS, Department of Chemical and
-                Biological Sciences. We are a multidisciplinary team merging expertise from Physics, Chemistry, and
-                Biotechnology. Our research focuses on applying advanced computational methods rooted in statistical
-                mechanics to solve interdisciplinary challenges in chemistry, physics, and biology. Using a
-                molecular
-                thermodynamics approach, we investigate molecular interactions and dynamics from small molecules
-                like
-                water to large biomolecular assemblies and amphiphilic molecule self-assembly. Join us as we explore
-                the
-                forefront of these fields and drive transformative discoveries.
-              </li>
-
-              <!-- <li><i class="ion-android-checkmark-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li> -->
-              <!-- <li><i class="ion-android-checkmark-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li> -->
-              <!-- <li><i class="ion-android-checkmark-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li> -->
-            </ul>
-
+              Welcome to the Computational Biophysical Chemistry group at SNBNCBS, Department of Chemical and
+              Biological Sciences. We are a multidisciplinary team merging expertise from Physics, Chemistry, and
+              Biotechnology. Our research focuses on applying advanced computational methods rooted in statistical
+              mechanics to solve interdisciplinary challenges in chemistry, physics, and biology. Using a
+              molecular
+              thermodynamics approach, we investigate molecular interactions and dynamics from small molecules
+              like
+              water to large biomolecular assemblies and amphiphilic molecule self-assembly. Join us as we explore
+              the
+              forefront of these fields and drive transformative discoveries.
+            </p>
           </div>
         </div>
 
       </div>
     </section>
-    <section id="services">
-      <div class="container">
-        <div class="section-header">
-          <h2 style="text-transform: none;">What we do</h2>
-          <p style="line-height: 2.0em;">
+    <section id="services" style="background-color:#edf2f7;">
+      <div class="container-fluid" style="width: 85%;">
+        <div id="my-research">
+
+          <div class="my_section-title">
+            <h2>What we do</h2>
+          </div>
+          <p class="my-text">
             The broad area of our research is computational molecular biophysics and theoretical physical chemistry.
             The
             primary goal is to employ state of the art computational methodologies primarily based on statistical
@@ -364,9 +163,12 @@ https://github.com/robole/title-sequences
             their function and properties. We work on a wide range of problems starting from small molecules (as
             small
             as water!) to large biomolecular assemblies and self-assembly of amphiphilic molecules.
+            <br>
+            Few representative work are..
           </p>
-        </div>
 
+        </div>
+        <br><br>
         <div class="row">
 
           <div class="col-lg-6">
@@ -376,7 +178,7 @@ https://github.com/robole/title-sequences
                   src="https://www.pnas.org/cms/10.1073/pnas.1705311114/asset/42c74cc9-817b-4839-a144-6fa718f86a7a/assets/graphic/pnas.1705311114fig04.jpeg">
 
               </div>
-              <h4 class="title"><a href="">(Bio)molecular recognition and signalling</a></h4>
+              <h4 class="title">(Bio)molecular recognition and signalling</h4>
               <div>
 
                 <p class="description">
@@ -391,24 +193,31 @@ https://github.com/robole/title-sequences
                   (dynamic allostery), where ligand binding leads to modulation in distal...
                 </p>
               </div>
+              <div class="" style="display: flex; justify-content: end;">
+                <button class="btn-get-started scrollto">Read More</button>
+              </div>
             </div>
           </div>
 
-          <div class="col-lg-6">
+          <div class=" col-lg-6">
             <div class="box wow fadeInRight" style="border: #000 solid 4px; box-shadow: 8px 8px 0 #000;">
               <div class="icon">
                 <img
                   src="https://pubs.rsc.org/en/Image/Get?imageInfo.ImageType=GA&imageInfo.ImageIdentifier.ManuscriptID=C6CP04378J&imageInfo.ImageIdentifier.Year=2016">
               </div>
-              <h4 class="title" style="color:red;"><a href="" style="color: darkblue;">Context dependent properties
-                  of
-                  interfacial and confined water</a></h4>
-              <p class="description" style="color:midnightblue;">
-                Water confined within reverse micelles (RMs) exhibits distinct properties: "interfacial water" with
-                slowed dynamics and "core water" resembling bulk water depending on RM size
-                . Using molecular dynamics simulations, we explore these differences and compare them with
-                water-in-oil nanodroplets. Results show that RM' s charged interface significantly affects structural
-                ordering and dynamics through electrostatic and hydrogen bonding... </p>
+              <h4 class="title">Context dependent properties
+                of
+                interfacial and confined water</h4>
+              <p class=" description">
+                Water confined within reverse micelles (RMs) exhibits distinct properties: " interfacial water" with
+                slowed dynamics and "core water" resembling bulk water depending on RM size . Using molecular dynamics
+                simulations, we explore these differences and compare them with water-in-oil nanodroplets. Results
+                show
+                that RM' s charged interface significantly affects structural ordering and dynamics through
+                electrostatic and hydrogen bonding... </p>
+              <div class="" style="display: flex; justify-content: end;">
+                <button class="btn-get-started scrollto">Read More</button>
+              </div>
             </div>
           </div>
 
@@ -429,6 +238,9 @@ https://github.com/robole/title-sequences
                 (∼10–20%),
                 potentially precursors to PrPSC oligomers. These states involve the unstructured...
               </p>
+              <div class="" style="display: flex; justify-content: end;">
+                <button class="btn-get-started scrollto">Read More</button>
+              </div>
             </div>
           </div>
 
@@ -451,14 +263,47 @@ https://github.com/robole/title-sequences
                 similar
                 to that of...
               </p>
+              <div class="" style="display: flex; justify-content: end;">
+                <button class="btn-get-started scrollto">Read More</button>
+              </div>
             </div>
           </div>
 
         </div>
         <div class="" style="display: flex; justify-content: center;">
-          <a href="research.html" class="btn-get-started scrollto" style="color: aliceblue;">More!</a>
+          <a href="research.html" class="btn-projects scrollto" style="color: aliceblue;">More!</a>
         </div>
       </div>
+
+      <!--       <div class="container-fluid justify-content-center">
+        <main id="main1">
+          <div class="card_res" id="card1">
+            <div class="card-top"><img class="card-image" alt="" src="" /></div>
+            <div class="card-mid">
+              <h4 class="card-title">Titre</h4>
+              <label class="card-desc">Description</label>
+              <div class="card-blur-zone"></div>
+            </div>
+          </div>
+          <div class="card_res" id="card2">
+            <div class="card-top"><img class="card-image" alt="" src="" /></div>
+            <div class="card-mid">
+              <h4 class="card-title">Titre</h4>
+              <label class="card-desc">Description</label>
+              <div class="card-blur-zone"></div>
+            </div>
+          </div>
+          <div class="card_res" id="card3">
+            <div class="card-top"><img class="card-image" alt="" src="" /></div>
+            <div class="card-mid">
+              <h4 class="card-title">Titre</h4>
+              <label class="card-desc">Description</label>
+              <div class="card-blur-zone"></div>
+            </div>
+          </div>
+        </main>
+
+      </div> -->
     </section><!-- #services -->
   </main>
 
@@ -494,7 +339,62 @@ https://github.com/robole/title-sequences
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
+  <script>
+    class YBCard {
 
+      constructor(id, title, description, image) {
+        this.idCard = id
+        this.titre = title
+        this.description = description
+        this.image = image
+      }
+
+      initCard() {
+        this.updateDom();
+        this.activateListeners();
+      }
+
+      updateDom() {
+        var cardDom = document.getElementById(this.idCard)
+        if (cardDom.hasChildNodes()) {
+          var cardDomImage = cardDom.getElementsByClassName('card-image')[0]
+          cardDomImage.src = this.image;
+
+          var cardDomTitle = cardDom.getElementsByClassName('card-title')[0]
+          cardDomTitle.innerHTML = this.titre;
+
+          var cardDomDesc = cardDom.getElementsByClassName('card-desc')[0]
+          cardDomDesc.innerHTML = this.description;
+        }
+      }
+
+      activateListeners() {
+        var cardDom = document.getElementById(this.idCard)
+        cardDom.addEventListener("mouseover", function (event) {
+          var cardDomTitle = cardDom.getElementsByClassName('card-title')[0]
+          var cardDomDesc = cardDom.getElementsByClassName('card-desc')[0]
+          var cardDomMiddle = cardDom.getElementsByClassName('card-mid')[0]
+          var cardMiddleHeight = cardDomTitle.offsetHeight + cardDomDesc.offsetHeight;
+          cardDomMiddle.style.height = cardMiddleHeight + 100 + "px";
+        }, false);
+
+        cardDom.addEventListener("mouseout", function (event) {
+          var cardDomMiddle = cardDom.getElementsByClassName('card-mid')[0]
+          cardDomMiddle.style.height = 200 + "px";
+        }, false);
+      }
+    }
+
+    var card1 = new YBCard("card1", "(Bio)molecular recognition and signalling", " Allosteric regulation is a crucial component in biochemical pathways, where ligand binding to an allosteric site modulates the enzymatic activity at a distant functional site.There is rapid growth in interest toward rational design of allosteric drugs.PDZ domain proteins(frequently encountered in signaling protein complexes) are classic examples of allostery without significant structural changes (dynamic allostery), where ligand binding leads to modulation in distal...", "https://www.pnas.org/cms/10.1073/pnas.1705311114/asset/42c74cc9-817b-4839-a144-6fa718f86a7a/assets/graphic/pnas.1705311114fig04.jpeg")
+    card1.initCard();
+
+    var card2 = new YBCard("card2", "Context dependent properties of interfacial and confined water", "Water confined within reverse micelles (RMs) exhibits distinct properties: 'interfacial water' with slowed dynamics and 'core water' resembling bulk water depending on RM size. Using molecular dynamics simulations, we explore these differences and compare them with water -in -oil nanodroplets.Results show that RM' s charged interface significantly affects structural ordering and dynamics through electrostatic and hydrogen bonding... ", "https://pubs.acs.org/cms/10.1021/acs.biochem.6b01042/asset/images/medium/bi-2016-01042c_0009.gif");
+    card2.initCard();
+
+    var card3 = new YBCard("card3", "Protein misfolding and aggregation", "                Using approximately 65 μs of replica exchange molecular dynamics simulations, we have constructed temperature - dependent conformational free energy landscapes for human prion protein.These reveal multiple metastable states stabilized by non - native contacts and hydrogen bonds, facilitating protein misfolding.We identified metastable states with high β - content(∼30–40 %) and low α - content(∼10–20 %), potentially precursors to PrPSC oligomers.These states involve the unstructured...", "https://pubs.rsc.org/en/Image/Get?imageInfo.ImageType=GA&imageInfo.ImageIdentifier.ManuscriptID=C6CP04378J&imageInfo.ImageIdentifier.Year=2016");
+    card3.initCard();
+
+  </script>
 </body>
 
 </html>

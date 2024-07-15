@@ -1,0 +1,197 @@
+  @keyframes pop-word {
+      to {
+          transform: rotateX(0);
+      }
+  }
+
+  @keyframes show {
+      to {
+          opacity: 1;
+      }
+  }
+
+  @keyframes bar-scale {
+      to {
+          transform: scaleY(1);
+      }
+  }
+
+  @keyframes sparkle {
+      0% {
+          transform: scale(0);
+      }
+
+      60% {
+          transform: scale(1) translate(4px, 1px) rotate(8deg);
+      }
+
+      100% {
+          transform: scale(0) translate(4px, 1px) rotate(8deg);
+      }
+  }
+
+  @keyframes shimmer {
+      to {
+          text-shadow: 0 0 8px red;
+      }
+  }
+
+  .myTitle {
+      color: #0c2e8a;
+      font-family: "Playfair Display", Vidaloka, serif;
+      font-size: 6rem;
+      font-weight: 500;
+      line-height: 1.0;
+      perspective: 1000px;
+      /* text-shadow: rgb(216, 232, 5) 0 0 10px; */
+      text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  }
+
+  .word {
+      display: block;
+
+      animation: show 0.01s forwards, pop-word 1.5s forwards;
+      animation-timing-function: cubic-bezier(0.14, 1.23, 0.33, 1.16);
+      opacity: 0;
+
+      transform: rotateX(120deg);
+      transform-origin: 50% 100%;
+  }
+
+  .word:nth-of-type(2) {
+      padding: 0 2rem;
+
+      animation-delay: 1.5s;
+
+      color: #50d8af;
+      /* text-shadow: rgb(1, 24, 110) 0 0 10px; */
+      text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+
+
+  }
+
+
+  @media screen and (max-width: 600px) {
+      .myTitle {
+          font-size: 5rem;
+      }
+  }
+
+  @media screen and (max-width: 500px) {
+      .myTitle {
+          font-size: 4rem;
+          text-shadow: -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000, 0.5px 0.5px 0 #000;
+      }
+
+      .word:nth-of-type(2) {
+          text-shadow: -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000, 0.5px 0.5px 0 #000;
+      }
+  }
+
+  @media screen and (max-width: 400px) {
+      .myTitle {
+          font-size: 3rem;
+          text-shadow: -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000, 0.5px 0.5px 0 #000;
+      }
+
+      .word:nth-of-type(2) {
+          text-shadow: -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000, 0.5px 0.5px 0 #000;
+      }
+  }
+
+  #about_section {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      gap: 10px;
+  }
+
+  .my_section-title {
+      margin-bottom: 30px;
+      font-family: 'Playfair Display';
+      text-align: left;
+  }
+
+  .my_section-title h2 {
+      text-transform: none;
+      font-size: 36px;
+      color: #0c2e8a;
+      font-family: "Playfair Display", serif;
+      font-weight: 700;
+      position: relative;
+      padding-bottom: 20px;
+  }
+
+  .my_section-title h2::before {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 3px;
+      background: #50d8af;
+      bottom: 0;
+      left: 0;
+  }
+
+  .my_section-title p {
+      padding: 0;
+      margin: 0;
+  }
+
+  .title {
+      font-family: 'Playfair Display';
+      font-size: 32px;
+  }
+
+  p.my-text {
+      font-size: 22px;
+      /* line-height: 10.6; */
+      line-height: 1.8;
+  }
+
+  #my-intro {
+      -moz-box-shadow: 0 0 3px #ccc;
+      -webkit-box-shadow: 0 0 3px #ccc;
+      padding: 30px;
+      text-align: left;
+      box-shadow: 0 0 10px #ccc;
+      background-color: rgb(255, 255, 255);
+      transition: all 0.3s ease-in-out;
+  }
+
+  #my-intro:hover {
+      box-shadow: 0 0 50px #ccc;
+      transform: scale(1.03);
+  }
+
+  .about-img>img {
+      box-shadow: 0 0 10px #ccc;
+      transition: all 0.3s ease-in-out;
+
+  }
+
+  .about-img>img:hover {
+      box-shadow: 0 0 50px #ccc;
+      transform: scale(1.03);
+  }
+
+  #services .box p {
+      font-size: 25px;
+      color: #0c2e8a;
+      line-height: 1.2;
+  }
+
+  #my-research {
+      -moz-box-shadow: 0 0 3px #ccc;
+      -webkit-box-shadow: 0 0 3px #ccc;
+      padding: 30px;
+      text-align: left;
+      box-shadow: 0 0 10px #ccc;
+      background-color: rgb(255, 255, 255);
+      transition: all 0.3s ease-in-out;
+  }
+
+  #my-research:hover {
+      box-shadow: 0 0 50px #ccc;
+      transform: scale(1.03);
+  }

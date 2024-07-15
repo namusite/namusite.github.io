@@ -624,6 +624,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 #about .about-img img {
   margin-left: -15px;
   max-width: 100%;
+  /* text-align: center; */
+  /* margin: auto; */
 }
 
 @media (max-width: 768px) {
@@ -640,8 +642,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 #about .content h2 {
   color: #0c2e8a;
   font-weight: 700;
-  font-size: 36px;
-  font-family: "Raleway", sans-serif;
+  /* font-size: 36px; */
+  /* font-family: "Raleway", sans-serif; */
 }
 
 #about .content h3 {
@@ -652,9 +654,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-style: italic;
 }
 
-#about .content p {
-  line-height: 26px;
-}
+/* #about .content p { */
+/* line-height: 26px; */
+/* } */
 
 #about .content p:last-child {
   margin-bottom: 0;
@@ -732,7 +734,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-left: 10px;
   font-weight: 700;
   margin-bottom: 15px;
-  font-size: 22px;
+  font-size: 30px;
 }
 
 #services .box h4 a {
@@ -764,13 +766,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 @media screen and (min-width: 746px) {
   #services .box {
-    height: 330px;
+    height: 520px;
   }
 }
 
 @media screen and (min-width: 992px) {
   #services .box {
-    height: 400px;
+    height: 500px;
   }
 }
 
