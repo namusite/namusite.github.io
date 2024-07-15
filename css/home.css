@@ -183,16 +183,17 @@
   #services .box p {
       font-size: 25px;
       color: #0c2e8a;
-      line-height: 1.0;
+      line-height: 1.2;
   }
 
   @media screen and (min-width: 300px) {
       #services p {
           font-size: 15px;
       }
+
       #about p {
-        font-size: 15px;
-    }
+          font-size: 15px;
+      }
 
       #services .box p {
           font-size: 12px;
