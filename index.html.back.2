@@ -13,12 +13,10 @@
   <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <!--   <link
+  <link
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700"
-    rel="stylesheet"> -->
+    rel="stylesheet">
 
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:wght@600">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Crimson+Text:wght@600">
   <!-- Bootstrap CSS File -->
   <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -82,123 +80,6 @@
     .carousel-fade .active.carousel-item-prev {
       transform: translateX(0);
       transform: translate3d(0, 0, 0);
-    }
-
-    /*
-
-Tutorial:
-https://www.roboleary.net/animation/2022/10/31/how-to-make-a-slick-animation-schitts-creek-title-sequence.html
-
-Part of Title Sequences collection:
-https://codepen.io/collection/nNmwgP
-
-Source code:
-https://github.com/robole/title-sequences
-
-*/
-
-    /* @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600"); */
-
-
-    @keyframes pop-word {
-      to {
-        transform: rotateX(0);
-      }
-    }
-
-    @keyframes show {
-      to {
-        opacity: 1;
-      }
-    }
-
-    @keyframes bar-scale {
-      to {
-        transform: scaleY(1);
-      }
-    }
-
-    @keyframes sparkle {
-      0% {
-        transform: scale(0);
-      }
-
-      60% {
-        transform: scale(1) translate(4px, 1px) rotate(8deg);
-      }
-
-      100% {
-        transform: scale(0) translate(4px, 1px) rotate(8deg);
-      }
-    }
-
-    @keyframes shimmer {
-      to {
-        text-shadow: 0 0 8px red;
-      }
-    }
-
-    .myTitle {
-      color: #0c2e8a;
-      font-family: "Playfair Display", Vidaloka, serif;
-      font-size: 7rem;
-      font-weight: 500;
-      line-height: 0.85;
-      perspective: 1000px;
-      /* text-shadow: rgb(216, 232, 5) 0 0 10px; */
-      text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-    }
-
-    .word {
-      display: block;
-
-      animation: show 0.01s forwards, pop-word 1.5s forwards;
-      animation-timing-function: cubic-bezier(0.14, 1.23, 0.33, 1.16);
-      opacity: 0;
-
-      transform: rotateX(120deg);
-      transform-origin: 50% 100%;
-    }
-
-    .word:nth-of-type(2) {
-      padding: 0 2rem;
-
-      animation-delay: 1.5s;
-
-      color: #50d8af;
-      /* text-shadow: rgb(1, 24, 110) 0 0 10px; */
-      text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-
-
-    }
-
-
-    @media screen and (max-width: 600px) {
-      .myTitle {
-        font-size: 5rem;
-      }
-    }
-
-    @media screen and (max-width: 500px) {
-      .myTitle {
-        font-size: 4rem;
-        text-shadow: -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000, 0.5px 0.5px 0 #000;
-      }
-
-      .word:nth-of-type(2) {
-        text-shadow: -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000, 0.5px 0.5px 0 #000;
-      }
-    }
-
-    @media screen and (max-width: 400px) {
-      .myTitle {
-        font-size: 3rem;
-        text-shadow: -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000, 0.5px 0.5px 0 #000;
-      }
-
-      .word:nth-of-type(2) {
-        text-shadow: -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000, 0.5px 0.5px 0 #000;
-      }
     }
   </style>
 
@@ -295,11 +176,7 @@ https://github.com/robole/title-sequences
       </div>
     </div> -->
     <div class=" intro-content">
-      <h1 class="myTitle">
-        <span class="word">Computational Bio-physical</span>
-        <span class="word">Chemistry Group</span>
-      </h1>
-      <!-- <h2>Computational Bio-Physical Chemistry Group!</h2> -->
+      <h2>Computational Bio-Physical Chemistry Group!</h2>
       <!--  <div>
         <a href="#about" class="btn-get-started scrollto">Get Started</a>
         <a href="#portfolio" class="btn-projects scrollto">Our Projects</a>
