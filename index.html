@@ -23,6 +23,8 @@
   <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Libraries CSS Files -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <!-- <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script> -->
   <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <link href="lib/animate/animate.min.css" rel="stylesheet">
   <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
@@ -33,7 +35,36 @@
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
   <link href="css/home.css" rel="stylesheet">
+  <style>
+    #viewer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+      padding: 0;
+      /* height: 400px; */
+      width: 400px;
+      height: 400px;
+      overflow: hidden;
+      z-index: 10;
+      border: #000 2px solid;
+      box-shadow: #000 4px 4px 0px;
+    }
 
+    @media screen and (min-width: 700px) {
+      #viewer {
+        display: none;
+      }
+    }
+
+    @media screen and (min-width: 992px) {
+      #viewer {
+        display: block;
+      }
+    }
+  </style>
 
 </head>
 
@@ -62,10 +93,16 @@
     Header
   ============================-->
   <header id="header">
-    <div class="container-fluid" style="width:85%">
+    <div class="container-fluid">
 
       <div id="logo" class="pull-left">
-        <h1><a href="#body" class="scrollto">SC<span>Lab</span><sup style="color: crimson;">@SNBNCBS</sup></a></h1>
+        <!--         <h1><a href="#body" class="scrollto" style="color:#2a7a8e">SC<span style="color:#327459;">Lab</span><sup
+              style="color:#98d2e0;">@SNBNCBS</sup></a></h1> -->
+
+        <h1>
+          <a href="#body" class="scrollto"><img src="img/glogo.png" alt="" title="" /></a>
+
+        </h1>
       </div>
 
       <nav id="nav-menu-container"">
@@ -94,41 +131,170 @@
     Intro Section
   ============================-->
   <section id="intro">
-    <div class=" intro-content">
-      <h1 class="myTitle">
-        <span class="word">Computational Bio-physical</span>
-        <span class="word">Chemistry Group</span>
-      </h1>
+    <div class="container intro-content">
+      <div class="row" style="margin: auto;">
+        <div class="col-lg-7" style="display: flex;">
+          <h2 class="myTitle" style="color: #000;">
+            <span class="word" style="color: #0a63a1; text-decoration: none;">Computational Bio-physical</span>
+            <span class="word" style="color: #0a63a1; text-decoration:none;">Chemistry Group</span>
+          </h2>
+        </div>
+        <div class="col-lg-5" style="position: relative;">
+          <div id="viewer"></div>
+        </div>
+      </div>
+
     </div>
+
   </section>
 
   <!-- #intro -->
+  <section class=" container-fluid" style="width: 95%; background-color: #d8eefe;">
+
+    <div class="pslider " reverse="true" style="--width: 28rem; --height: 7rem; --quantity: 9">
+      <div class="list">
+        <div class="item" style="--position: 1">
+          <div class="card" style="width: 28rem; background-color:#d8eefe; border:#094067 3px solid;">
+            <div class="card-header" style="border-bottom: #094067 3px solid;">
+              <i class="fas fa-award"></i> Award
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Won the CRSI Bronze medal 2025</h5>
+              <p class="card-text">Dr. Suman Chakrabarty won the CSRI Bronze medal 2025 in chemistry.</p>
+              <!--               <div style="display: flex; float:right">
+                <a href="#" class="btn btn-primary"
+                  style="border: #094067 2px solid; background-color: #3da9fc;">More</a>
+              </div> -->
+            </div>
+          </div>
+        </div>
+        <div class="item" style="--position: 2">
+          <div class="card" style="width: 28rem;">
+            <div class="card-header">
+              Open Positions
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">TRC project student positons</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="item" style="--position: 3">
+          <div class="card" style="width: 28rem;">
+            <div class="card-header">
+              Featured
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="item" style="--position: 4">
+          <div class="card" style="width: 28rem;">
+            <div class="card-header">
+              Featured
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="item" style="--position: 5">
+          <div class="card" style="width: 28rem;">
+            <div class="card-header">
+              Featured
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="item" style="--position: 6">
+          <div class="card" style="width: 28rem;">
+            <div class="card-header">
+              Featured
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+
+        </div>
+        <div class="item" style="--position: 7">
+          <div class="card" style="width: 28rem;">
+            <div class="card-header">
+              Featured
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+
+        </div>
+        <div class="item" style="--position: 8">
+          <div class="card" style="width: 28rem;">
+            <div class="card-header">
+              Featured
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+
+        </div>
+        <div class="item" style="--position: 9">
+          <div class="card" style="width: 28rem;">
+            <div class="card-header">
+              Featured
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
 
   <main id="main">
 
     <!--==========================
       About Section
     ============================-->
-    <section id="about" class="wow fadeInUp" style="background-color: #e2e8f0;">
-      <div class="container-fluid">
+    <section id="about" class="wow fadeInUp" style="background-color: #e2daeb;">
+      <div class=" container-fluid">
         <div class=" row" id="about_section" style="margin: auto;">
-          <div class="col-lg-5 about-img" style="position: relative;margin: auto;">
-            <!--             <img src=" img/Combined.png" alt="" style="position: absolute;
-            margin: auto;
-            height: 100%;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;"> -->
-            <img src="img/Combined.png" alt="">
+          <div class="col-lg-5 about-img"
+            style=" position: relative; background-position: 50% 50%; margin: auto; background-image: url('/img/Combined.png'); background-size: contain; background-repeat: no-repeat; padding:0px; background-color: transparent">
+            <!-- <img src="img/Combined.png" alt="" style="text-align: center;"> -->
           </div>
+
           <div class="col-lg-6 content" id="my-intro">
             <div class="my_section-title">
-              <h2 class="title" style="font-family: 'Playfair Display';">Who we are</h2>
+              <h2 class="title">Who we are</h2>
             </div>
             <h3>CBS Department, SNBNCBS, Kolkata.</h3>
 
-            <p class="my-text">
+            <p class=" my-text">
 
               Welcome to the Computational Biophysical Chemistry group at SNBNCBS, Department of Chemical and
               Biological Sciences. We are a multidisciplinary team merging expertise from Physics, Chemistry, and
@@ -146,30 +312,44 @@
 
       </div>
     </section>
-    <section id="services" style="background-color:#edf2f7;">
+    <section id="services" style="background-color:#d8eefe;">
       <div class="container-fluid">
-        <div id="my-research">
-          <div class="my_section-title">
-            <h2>What we do</h2>
+
+        <div class="row justify-content-center d-flex m-10" style="margin:auto">
+          <div class=" col-lg-7">
+            <div id="">
+              <div class="my_section-title">
+                <h2>What we do</h2>
+              </div>
+              <p class="my-text" style="padding-right: 50px; line-height: 2.0;">
+                The broad area of our research is computational molecular biophysics and theoretical physical chemistry.
+                The
+                primary goal is to employ state of the art computational methodologies primarily based on statistical
+                mechanics to solve realistic problems in the interdisciplinary areas of chemistry, physics and biology.
+                Overall, we take an approach of molecular thermodynamics to connect molecular interactions and dynamics
+                to
+                their function and properties. We work on a wide range of problems starting from small molecules (as
+                small
+                as water!) to large biomolecular assemblies and self-assembly of amphiphilic molecules.
+                <br>
+                Few representative work are..
+              </p>
+            </div>
           </div>
-          <p class="my-text">
-            The broad area of our research is computational molecular biophysics and theoretical physical chemistry.
-            The
-            primary goal is to employ state of the art computational methodologies primarily based on statistical
-            mechanics to solve realistic problems in the interdisciplinary areas of chemistry, physics and biology.
-            Overall, we take an approach of molecular thermodynamics to connect molecular interactions and dynamics
-            to
-            their function and properties. We work on a wide range of problems starting from small molecules (as
-            small
-            as water!) to large biomolecular assemblies and self-assembly of amphiphilic molecules.
-            <br>
-            Few representative work are..
-          </p>
+          <div class="col-md-4">
+            <img src="/img/work.png" class="img-fluid rounded-start" alt="...">
+          </div>
         </div>
+
         <br><br>
-        <div class="row">
+
+
+        <div class="row" style="background-color: #d8eefe;">
 
           <div class="col-lg-6">
+
+
+
             <div class="box wow fadeInLeft" style="border: #000 solid 4px; box-shadow: 8px 8px 0 #000;">
               <div class="icon">
                 <img
@@ -244,15 +424,15 @@
 
           <div class="col-lg-6">
             <div class="box wow fadeInRight" data-wow-delay="0.2s"
-              style="border: #000 solid 4px; box-shadow: 8px 8px 0 #000;">
+              style="background-color: #fffffe; border: #000 solid 4px; box-shadow: 8px 8px 0 #000;">
               <div class="icon">
-                <img
+                <img style="border:#000000 4px solid; border-radius: 5%;"
                   src="https://pubs.acs.org/cms/10.1021/acs.jpcb.8b02285/asset/images/medium/jp-2018-02285y_0008.gif">
               </div>
-              <h4 class="title"><a href="">Nucleation and growth in the context of phase transition like
-                  phenomena</a>
+              <h4 class="title" style="color:#1f1235">Nucleation and growth in the context of phase transition like
+                phenomena
               </h4>
-              <p class="description">
+              <p class="description" style="color:#1f182a;">
                 In experimental studies, it has been observed that the presence of sodium dodecyl sulfate (SDS)
                 significantly increases the kinetics of hydrate formation and the final water-to-hydrate conversion
                 ratio. In this study, we intend to understand the molecular mechanism behind the effect of SDS on
@@ -331,9 +511,9 @@
   <script src="lib/owlcarousel/owl.carousel.min.js"></script>
   <script src="lib/magnific-popup/magnific-popup.min.js"></script>
   <script src="lib/sticky/sticky.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8HeI8o-c1NppZA-92oYlXakhDPYR7XMY"></script>
+  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8HeI8o-c1NppZA-92oYlXakhDPYR7XMY"></script> -->
   <!-- Contact Form JavaScript File -->
-  <script src="contactform/contactform.js"></script>
+  <!-- <script src="contactform/contactform.js"></script> -->
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
@@ -391,6 +571,19 @@
 
     var card3 = new YBCard("card3", "Protein misfolding and aggregation", "                Using approximately 65 μs of replica exchange molecular dynamics simulations, we have constructed temperature - dependent conformational free energy landscapes for human prion protein.These reveal multiple metastable states stabilized by non - native contacts and hydrogen bonds, facilitating protein misfolding.We identified metastable states with high β - content(∼30–40 %) and low α - content(∼10–20 %), potentially precursors to PrPSC oligomers.These states involve the unstructured...", "https://pubs.rsc.org/en/Image/Get?imageInfo.ImageType=GA&imageInfo.ImageIdentifier.ManuscriptID=C6CP04378J&imageInfo.ImageIdentifier.Year=2016");
     card3.initCard();
+
+  </script>
+  <script>
+    target = document.getElementsByClassName("about-img")[0];
+    pre = document.getElementById("my-intro");
+    // target.style.width = "100%";
+    target.style.width = pre.clientWidth + "px";
+    target.style.height = pre.clientHeight + "px";
+
+  </script>
+  <script data-main="select.js" src="js/require.js"></script>
+  <script>
+    var a = document.getElementById("viewer");
 
   </script>
 </body>
