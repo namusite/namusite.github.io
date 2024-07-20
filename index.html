@@ -45,8 +45,8 @@
       margin: auto;
       padding: 0;
       /* height: 400px; */
-      width: 400px;
-      height: 400px;
+      width: 20vw;
+      height: 30vh;
       overflow: hidden;
       z-index: 10;
       border: #000 2px solid;
@@ -56,6 +56,10 @@
     @media screen and (min-width: 300px) {
       #viewer {
         display: none;
+      }
+
+      .word {
+        font-size: 2.0rem;
       }
 
     }
@@ -69,6 +73,20 @@
     @media screen and (min-width: 992px) {
       #viewer {
         display: block;
+      }
+
+      .word {
+        font-size: 3.5rem;
+      }
+    }
+
+    @media screen and (min-width: 1200px) {
+      #viewer {
+        display: block;
+      }
+
+      .word {
+        font-size: 6.0rem;
       }
     }
   </style>
@@ -140,9 +158,9 @@
   <section id="intro">
     <div class="container intro-content">
       <div class="row" style="margin: auto;">
-        <div class="col-lg-7" style="display: flex;">
-          <h2 class="myTitle" style="color: #000;">
-            <span class="word" style="color: #0a63a1; text-decoration: none;">Computational Bio-physical</span>
+        <div class="col-lg-7" style="display: flex;" id="intro-text">
+          <h2 class="myTitle">
+            <span class=" word" style="color: #0a63a1; text-decoration: none;">Computational Bio-physical</span>
             <span class="word" style="color: #0a63a1; text-decoration:none;">Chemistry Group</span>
           </h2>
         </div>
@@ -288,8 +306,8 @@
       About Section
     ============================-->
     <section id="about" class="wow fadeInUp" style="background-color: #e2daeb;">
-      <div class=" container-fluid">
-        <div class=" row" id="about_section" style="margin: auto;">
+      <div class="container-fluid">
+        <div class="row" id="about_section" style="margin: auto; padding: 0;">
           <div class="col-lg-5 about-img"
             style=" position: relative; background-position: 50% 50%; margin: auto; background-image: url('/img/Combined.png'); background-size: contain; background-repeat: no-repeat; padding:0px; background-color: transparent">
             <!-- <img src="img/Combined.png" alt="" style="text-align: center;"> -->
@@ -585,12 +603,23 @@
     pre = document.getElementById("my-intro");
     // target.style.width = "100%";
     target.style.width = pre.clientWidth + "px";
-    target.style.height = pre.clientHeight + "px";
+    target.style.height = pre.clientWidth + "px";
 
   </script>
   <script data-main="select.js" src="js/require.js"></script>
   <script>
-    var a = document.getElementById("viewer");
+    ;
+    go();
+    window.addEventListener('resize', go);
+
+    function go() {
+      var a = document.getElementById("viewer");
+      var text = document.getElementById("intro-text");
+      console.log(text.clientWidth);
+
+      a.style.width = text.clientHeight - 50 + "px";
+      a.style.height = text.clientHeight - 50 + "px"
+    }
 
   </script>
 </body>
