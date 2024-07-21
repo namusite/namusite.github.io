@@ -2,626 +2,369 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title>SCLab</title>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta content="" name="keywords">
-  <meta content="" name="description">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Favicons -->
-  <link href="img/favicon.png" rel="icon">
-  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <!--=============== REMIX ICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
-  <!-- Google Fonts -->
-  <!--   <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700"
-    rel="stylesheet"> -->
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
 
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:wght@600">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Crimson+Text:wght@600">
-  <!-- Bootstrap CSS File -->
-  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <title>SCLab - Home</title>
+    <style>
+        #viewer {
+            /* position: absolute; */
+            /* top: 0; */
+            /* left: 0; */
+            /* bottom: 0; */
+            /* right: 0; */
+            margin: auto;
+            padding: 0;
+            /* height: 400px; */
+            /* width: 20vw; */
+            /* height: 30vh; */
+            overflow: hidden;
+            /* z-index: 10; */
+            border: #000 2px solid;
+            box-shadow: #000 4px 4px 0px;
 
-  <!-- Libraries CSS Files -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <!-- <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script> -->
-  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="lib/animate/animate.min.css" rel="stylesheet">
-  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
-  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
-  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+        }
 
-  <!-- Main Stylesheet File -->
-  <link href="css/style.css" rel="stylesheet">
-  <link href="css/home.css" rel="stylesheet">
-  <style>
-    #viewer {
-      position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      margin: auto;
-      padding: 0;
-      /* height: 400px; */
-      width: 20vw;
-      height: 30vh;
-      overflow: hidden;
-      z-index: 10;
-      border: #000 2px solid;
-      box-shadow: #000 4px 4px 0px;
-    }
 
-    @media screen and (min-width: 300px) {
-      #viewer {
-        display: none;
-      }
+        .container_foto img {
+            width: 100%;
+            top: 0;
+            left: 0;
+            /* opacity: 0.4; */
+            overflow: hidden;
+            -webkit-transition: all 1s ease;
+            -moz-transition: all 1s ease;
+            -o-transition: all 1s ease;
+            -ms-transition: all 1s ease;
+            transition: all 1s ease;
+        }
 
-      .word {
-        font-size: 2.0rem;
-      }
+        /*hovers*/
 
-    }
+        .container_foto:hover {
+            cursor: pointer;
+        }
 
-    @media screen and (min-width: 700px) {
-      #viewer {
-        display: none;
-      }
-    }
+        .container_foto:hover img {
 
-    @media screen and (min-width: 992px) {
-      #viewer {
-        display: block;
-      }
-
-      .word {
-        font-size: 3.5rem;
-      }
-    }
-
-    @media screen and (min-width: 1200px) {
-      #viewer {
-        display: block;
-      }
-
-      .word {
-        font-size: 6.0rem;
-      }
-    }
-  </style>
-
+            transform: scale(1.15);
+        }
+    </style>
 </head>
 
-<body id="body">
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <img src="/assets/img/glogo.png" alt="" class="nav__logo-img">
+            </a>
 
-  <!--==========================
-    Top Bar
-  ============================-->
-  <section id="topbar" class="d-none d-lg-block">
-    <div class="container clearfix">
-      <div class="contact-info float-left">
-        <i class="fa fa-envelope-o"></i> <a href="mailto:contact@example.com">sumanc@bose.res.in</a>
-        <i class="fa fa-phone"></i> +91-33-2335 1313
-      </div>
-      <div class="social-links float-right">
-        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-        <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-        <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-        <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-      </div>
-    </div>
-  </section>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#" class="nav__link active-link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="research.html" class="nav__link">Research</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="publications.html" class="nav__link">Publications</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="members.html" class="nav__link">Members</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="positions.html" class="nav__link">Positions</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">More</a>
+                    </li>
+                </ul>
 
-  <!--==========================
-    Header
-  ============================-->
-  <header id="header">
-    <div class="container-fluid">
-
-      <div id="logo" class="pull-left">
-        <!--         <h1><a href="#body" class="scrollto" style="color:#2a7a8e">SC<span style="color:#327459;">Lab</span><sup
-              style="color:#98d2e0;">@SNBNCBS</sup></a></h1> -->
-
-        <h1>
-          <a href="#body" class="scrollto"><img src="img/glogo.png" alt="" title="" /></a>
-
-        </h1>
-      </div>
-
-      <nav id="nav-menu-container"">
-        <ul class=" nav-menu">
-        <li class="menu-active"><a href="#">Home</a></li>
-        <li><a href="research.html">Research</a></li>
-        <li><a href="publication.html">Publication</a></li>
-        <li><a href="members.html">Team</a></li>
-        <li><a href="positions.html">Positions</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li class="menu-has-children"><a href="">More</a>
-          <ul>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="#">SNBNCBS</a></li>
-            <li><a href="#">GitHub</a></li>
-          </ul>
-        </li>
-        </ul>
-      </nav>
-      <!-- #nav-menu-container -->
-    </div>
-  </header>
-  <!-- #header -->
-
-  <!--==========================
-    Intro Section
-  ============================-->
-  <section id="intro">
-    <div class="container intro-content">
-      <div class="row" style="margin: auto;">
-        <div class="col-lg-7" style="display: flex;" id="intro-text">
-          <h2 class="myTitle">
-            <span class=" word" style="color: #0a63a1; text-decoration: none;">Computational Bio-physical</span>
-            <span class="word" style="color: #0a63a1; text-decoration:none;">Chemistry Group</span>
-          </h2>
-        </div>
-        <div class="col-lg-5" style="position: relative;">
-          <div id="viewer"></div>
-        </div>
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- #intro -->
-  <section class=" container-fluid" style="width: 95%; background-color: #d8eefe;">
-
-    <div class="pslider " reverse="true" style="--width: 28rem; --height: 7rem; --quantity: 9">
-      <div class="list">
-        <div class="item" style="--position: 1">
-          <div class="card" style="width: 28rem; background-color:#d8eefe; border:#094067 3px solid;">
-            <div class="card-header" style="border-bottom: #094067 3px solid;">
-              <i class="fas fa-award"></i> Award
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
             </div>
-            <div class="card-body">
-              <h5 class="card-title">Won the CRSI Bronze medal 2025</h5>
-              <p class="card-text">Dr. Suman Chakrabarty won the CSRI Bronze medal 2025 in chemistry.</p>
-              <!--               <div style="display: flex; float:right">
-                <a href="#" class="btn btn-primary"
-                  style="border: #094067 2px solid; background-color: #3da9fc;">More</a>
-              </div> -->
+
+            <div class="nav__btns">
+                <!-- Theme change button -->
+                <!-- <i class="ri-moon-line change-theme" id="theme-button"></i> -->
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line"></i>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="item" style="--position: 2">
-          <div class="card" style="width: 28rem;">
-            <div class="card-header">
-              Open Positions
+        </nav>
+    </header>
+
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home" id="home">
+            <div class="home__container container grid" style="justify-content: center; margin: auto;">
+                <div class="home__img">
+
+                    <div id="viewer"></div>
+                </div>
+
+                <div class="home__data" id="home_text">
+                    <h1 class="home__title">
+                        Computational Biophysical<br> Chemistry Lab
+                    </h1>
+                </div>
+
+                <div class="home__social">
+                    <span class="home__social-follow">Follow Us</span>
+
+                    <div class="home__social-links">
+                        <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                        <a href="https://twitter.com/" target="_blank" class="home__social-link">
+                            <i class="ri-twitter-fill"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="card-body">
-              <h5 class="card-title">TRC project student positons</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+        </section>
+
+        <!--==================== ABOUT ====================-->
+        <section class="about section container" id="about">
+            <div class="about__container grid">
+                <img src="assets/img/Combined.png" alt="" class="about__img">
+
+                <div class="about__data">
+                    <h2 class="section__title about__title">
+                        Who we really are </h2>
+                    <p class="about__description">
+                    </p>
+
+                    <div class="about__details">
+                        <p class="about__details-description">
+                            <i class="ri-checkbox-fill about__details-icon"></i>
+                            Computational Biophysical Chemistry group at SNBNCBS, Department of Chemical and
+                            Biological
+                            Sciences.
+                        </p>
+                        <p class="about__details-description">
+                            <i class="ri-checkbox-fill about__details-icon"></i>
+                            Merging expertise from Physics, Chemistry, and Biotechnology.
+
+                        </p>
+                        <p class="about__details-description">
+                            <i class="ri-checkbox-fill about__details-icon"></i>
+                            Applying advanced computational methods to
+                            solve interdisciplinary challenges in chemistry, physics, and biology.
+                        </p>
+                        <p class="about__details-description">
+                            <i class="ri-checkbox-fill about__details-icon"></i>
+                            From small molecules like water to large biomolecular assemblies and
+                            amphiphilic
+                        </p>
+                    </div>
+
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="item" style="--position: 3">
-          <div class="card" style="width: 28rem;">
-            <div class="card-header">
-              Featured
+        </section>
+
+
+        <!--==================== Work ====================-->
+        <section class="about section container" id="about">
+            <div class="about__container grid">
+
+                <div class="about__data">
+                    <h2 class="section__title about__title">
+                        What we do </h2>
+                    <p class="about__details-description">
+                        Our research focuses on <b style="color: crimson;">computational molecular biophysics</b> and
+                        <b>theoretical physical
+                            chemistry</b>.
+                        We use advanced computational methodologies based on statistical mechanics to address
+                        interdisciplinary problems in chemistry, physics, and biology. Our molecular thermodynamics
+                        approach links molecular interactions and dynamics to their functions and properties. We
+                        study a
+                        broad range of issues, from small molecules like water to large biomolecular assemblies and
+                        amphiphilic molecule self-assembly.
+
+                    </p>
+
+                </div>
+                <img src="assets/img/work.png" alt="" class="about__img">
             </div>
-            <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+        </section>
+
+        <!--==================== STEPS ====================-->
+        <section class="steps section container">
+            <div class="steps__bg">
+                <h3 class="section__title-center steps__title">
+                    Few Representations of our <br> Research
+                </h3>
+
+                <div class="steps__container grid">
+                    <div class="steps__card">
+                        <div class="steps__card-number container_foto">
+                            <img
+                                src="https://www.pnas.org/cms/10.1073/pnas.1705311114/asset/42c74cc9-817b-4839-a144-6fa718f86a7a/assets/graphic/pnas.1705311114fig04.jpeg">
+                        </div>
+                        <h3 class="steps__card-title">
+                            (Bio)molecular recognition and signalling</h3>
+                    </div>
+                    <div class="steps__card">
+                        <div class="steps__card-number container_foto">
+                            <img
+                                src="https://pubs.rsc.org/en/Image/Get?imageInfo.ImageType=GA&imageInfo.ImageIdentifier.ManuscriptID=C6CP04378J&imageInfo.ImageIdentifier.Year=2016">
+                        </div>
+
+                        <h3 class="steps__card-title">
+                            Context dependent properties
+                            of
+                            interfacial and confined water
+                        </h3>
+
+                    </div>
+                    <div class="steps__card">
+                        <div class="steps__card-number container_foto">
+                            <img
+                                src="https://pubs.acs.org/cms/10.1021/acs.jpcb.8b02285/asset/images/medium/jp-2018-02285y_0008.gif">
+                        </div>
+                        <h3 class="steps__card-title">
+                            Nucleation and growth in the context of phase transition like
+                            phenomena
+                        </h3>
+
+                    </div>
+                    <div class="steps__card">
+                        <div class="steps__card-number container_foto">
+                            <img
+                                src="https://pubs.acs.org/cms/10.1021/acs.biochem.6b01042/asset/images/medium/bi-2016-01042c_0009.gif">
+                        </div>
+                        <h3 class="steps__card-title">
+                            Protein misfolding and aggregation
+                        </h3>
+                    </div>
+                    <div class="steps__card">
+                        <div class="steps__card-number container_foto">
+                            <img
+                                src="https://pubs.acs.org/cms/10.1021/acs.jpcb.8b02285/asset/images/medium/jp-2018-02285y_0008.gif">
+                        </div>
+                        <h3 class="steps__card-title">
+                            Nucleation and growth in the context of phase transition like
+                            phenomena
+                        </h3>
+
+                    </div>
+                    <div class="steps__card">
+                        <div class="steps__card-number container_foto">
+                            <img
+                                src="https://pubs.acs.org/cms/10.1021/acs.biochem.6b01042/asset/images/medium/bi-2016-01042c_0009.gif">
+                        </div>
+                        <h3 class="steps__card-title">
+                            Protein misfolding and aggregation
+                        </h3>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="item" style="--position: 4">
-          <div class="card" style="width: 28rem;">
-            <div class="card-header">
-              Featured
+        </section>
+
+
+
+        <!--==================== CONTACT ====================-->
+        <section class="contact section container" id="contact">
+            <div class="contact__container grid">
+                <div class="contact__box">
+                    <h2 class="section__title">
+                        Reach out to us today <br> via any of the given <br> information
+                    </h2>
+
+                    <div class="contact__data">
+                        <div class="contact__information">
+                            <h3 class="contact__subtitle">Call us for instant support</h3>
+                            <span class="contact__description">
+                                <i class="ri-phone-line contact__icon"></i>
+                                +999 888 777
+                            </span>
+                        </div>
+
+                        <div class="contact__information">
+                            <h3 class="contact__subtitle">Write us by mail</h3>
+                            <span class="contact__description">
+                                <i class="ri-mail-line contact__icon"></i>
+                                user@email.com
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <form action="" class="contact__form">
+                    <div class="contact__inputs">
+                        <div class="contact__content">
+                            <input type="email" placeholder=" " class="contact__input">
+                            <label for="" class="contact__label">Email</label>
+                        </div>
+
+                        <div class="contact__content">
+                            <input type="text" placeholder=" " class="contact__input">
+                            <label for="" class="contact__label">Subject</label>
+                        </div>
+
+                        <div class="contact__content contact__area">
+                            <textarea name="message" placeholder=" " class="contact__input"></textarea>
+                            <label for="" class="contact__label">Message</label>
+                        </div>
+                    </div>
+
+                    <button class="button button--flex">
+                        Send Message
+                        <i class="ri-arrow-right-up-line button__icon"></i>
+                    </button>
+                </form>
             </div>
-            <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-        <div class="item" style="--position: 5">
-          <div class="card" style="width: 28rem;">
-            <div class="card-header">
-              Featured
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-        <div class="item" style="--position: 6">
-          <div class="card" style="width: 28rem;">
-            <div class="card-header">
-              Featured
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
+        </section>
+    </main>
 
-        </div>
-        <div class="item" style="--position: 7">
-          <div class="card" style="width: 28rem;">
-            <div class="card-header">
-              Featured
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section">
+        <p class="footer__copy">&#169; SCLab. All rigths reserved</p>
+    </footer>
 
-        </div>
-        <div class="item" style="--position: 8">
-          <div class="card" style="width: 28rem;">
-            <div class="card-header">
-              Featured
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
+    <!--=============== SCROLL UP ===============-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-fill scrollup__icon"></i>
+    </a>
+    <!--=============== SCROLL REVEAL ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
 
-        </div>
-        <div class="item" style="--position: 9">
-          <div class="card" style="width: 28rem;">
-            <div class="card-header">
-              Featured
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+    <script data-main="select.js" src="js/require.js"></script>
 
-        </div>
-      </div>
-    </div>
-  </section>
+    <script>
+        ;
+        go();
+        window.addEventListener('resize', go);
+        window.addEventListener('load', go);
 
+        function go() {
+            var a = document.getElementById("viewer");
+            var text = document.getElementById("home_text");
+            console.log(text.clientWidth);
 
-
-
-  <main id="main">
-
-    <!--==========================
-      About Section
-    ============================-->
-    <section id="about" class="wow fadeInUp" style="background-color: #e2daeb;">
-      <div class="container-fluid">
-        <div class="row" id="about_section" style="margin: auto; padding: 0;">
-          <div class="col-lg-5 about-img"
-            style=" position: relative; background-position: 50% 50%; margin: auto; background-image: url('/img/Combined.png'); background-size: contain; background-repeat: no-repeat; padding:0px; background-color: transparent">
-            <!-- <img src="img/Combined.png" alt="" style="text-align: center;"> -->
-          </div>
-
-          <div class="col-lg-6 content" id="my-intro">
-            <div class="my_section-title">
-              <h2 class="title">Who we are</h2>
-            </div>
-            <h3>CBS Department, SNBNCBS, Kolkata.</h3>
-
-            <p class=" my-text">
-
-              Welcome to the Computational Biophysical Chemistry group at SNBNCBS, Department of Chemical and
-              Biological Sciences. We are a multidisciplinary team merging expertise from Physics, Chemistry, and
-              Biotechnology. Our research focuses on applying advanced computational methods rooted in statistical
-              mechanics to solve interdisciplinary challenges in chemistry, physics, and biology. Using a
-              molecular
-              thermodynamics approach, we investigate molecular interactions and dynamics from small molecules
-              like
-              water to large biomolecular assemblies and amphiphilic molecule self-assembly. Join us as we explore
-              the
-              forefront of these fields and drive transformative discoveries.
-            </p>
-          </div>
-        </div>
-
-      </div>
-    </section>
-    <section id="services" style="background-color:#d8eefe;">
-      <div class="container-fluid">
-
-        <div class="row justify-content-center d-flex m-10" style="margin:auto">
-          <div class=" col-lg-7">
-            <div id="">
-              <div class="my_section-title">
-                <h2>What we do</h2>
-              </div>
-              <p class="my-text" style="padding-right: 50px; line-height: 2.0;">
-                The broad area of our research is computational molecular biophysics and theoretical physical chemistry.
-                The
-                primary goal is to employ state of the art computational methodologies primarily based on statistical
-                mechanics to solve realistic problems in the interdisciplinary areas of chemistry, physics and biology.
-                Overall, we take an approach of molecular thermodynamics to connect molecular interactions and dynamics
-                to
-                their function and properties. We work on a wide range of problems starting from small molecules (as
-                small
-                as water!) to large biomolecular assemblies and self-assembly of amphiphilic molecules.
-                <br>
-                Few representative work are..
-              </p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <img src="/img/work.png" class="img-fluid rounded-start" alt="...">
-          </div>
-        </div>
-
-        <br><br>
-
-
-        <div class="row" style="background-color: #d8eefe;">
-
-          <div class="col-lg-6">
-
-
-
-            <div class="box wow fadeInLeft" style="border: #000 solid 4px; box-shadow: 8px 8px 0 #000;">
-              <div class="icon">
-                <img
-                  src="https://www.pnas.org/cms/10.1073/pnas.1705311114/asset/42c74cc9-817b-4839-a144-6fa718f86a7a/assets/graphic/pnas.1705311114fig04.jpeg">
-
-              </div>
-              <h4 class="title">(Bio)molecular recognition and signalling</h4>
-              <div>
-
-                <p class="description">
-                  Allosteric regulation is a crucial component in biochemical pathways, where ligand binding to an
-                  allosteric site modulates the enzymatic activity at a distant functional site. There is rapid
-                  growth
-                  in
-                  interest toward rational design of allosteric drugs. PDZ domain proteins (frequently encountered
-                  in
-                  signaling protein complexes) are classic examples of allostery without significant structural
-                  changes
-                  (dynamic allostery), where ligand binding leads to modulation in distal...
-                </p>
-              </div>
-              <div class="" style="display: flex; justify-content: end;">
-                <button class="btn-get-started scrollto">Read More</button>
-              </div>
-            </div>
-          </div>
-
-          <div class=" col-lg-6">
-            <div class="box wow fadeInRight" style="border: #000 solid 4px; box-shadow: 8px 8px 0 #000;">
-              <div class="icon">
-                <img
-                  src="https://pubs.rsc.org/en/Image/Get?imageInfo.ImageType=GA&imageInfo.ImageIdentifier.ManuscriptID=C6CP04378J&imageInfo.ImageIdentifier.Year=2016">
-              </div>
-              <h4 class="title">Context dependent properties
-                of
-                interfacial and confined water</h4>
-              <p class=" description">
-                Water confined within reverse micelles (RMs) exhibits distinct properties: " interfacial water" with
-                slowed dynamics and "core water" resembling bulk water depending on RM size . Using molecular dynamics
-                simulations, we explore these differences and compare them with water-in-oil nanodroplets. Results
-                show
-                that RM' s charged interface significantly affects structural ordering and dynamics through
-                electrostatic and hydrogen bonding... </p>
-              <div class="" style="display: flex; justify-content: end;">
-                <button class="btn-get-started scrollto">Read More</button>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6">
-            <div class="box wow fadeInLeft" data-wow-delay="0.2s"
-              style="border: #000 solid 4px; box-shadow: 8px 8px 0 #000;">
-              <div class="icon">
-                <img
-                  src="https://pubs.acs.org/cms/10.1021/acs.biochem.6b01042/asset/images/medium/bi-2016-01042c_0009.gif">
-              </div>
-              <h4 class="title"><a href="">Protein misfolding and aggregation</a></h4>
-              <p class="description block-with-text" id="trunc3">
-                Using approximately 65 μs of replica exchange molecular dynamics simulations, we have constructed
-                temperature-dependent conformational free energy landscapes for human prion protein. These reveal
-                multiple metastable states stabilized by non-native contacts and hydrogen bonds, facilitating
-                protein
-                misfolding. We identified metastable states with high β-content (∼30–40%) and low α-content
-                (∼10–20%),
-                potentially precursors to PrPSC oligomers. These states involve the unstructured...
-              </p>
-              <div class="" style="display: flex; justify-content: end;">
-                <button class="btn-get-started scrollto">Read More</button>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6">
-            <div class="box wow fadeInRight" data-wow-delay="0.2s"
-              style="background-color: #fffffe; border: #000 solid 4px; box-shadow: 8px 8px 0 #000;">
-              <div class="icon">
-                <img style="border:#000000 4px solid; border-radius: 5%;"
-                  src="https://pubs.acs.org/cms/10.1021/acs.jpcb.8b02285/asset/images/medium/jp-2018-02285y_0008.gif">
-              </div>
-              <h4 class="title" style="color:#1f1235">Nucleation and growth in the context of phase transition like
-                phenomena
-              </h4>
-              <p class="description" style="color:#1f182a;">
-                In experimental studies, it has been observed that the presence of sodium dodecyl sulfate (SDS)
-                significantly increases the kinetics of hydrate formation and the final water-to-hydrate conversion
-                ratio. In this study, we intend to understand the molecular mechanism behind the effect of SDS on
-                the
-                formation of methane hydrate through molecular dynamics simulation. Hydrate formation conditions
-                similar
-                to that of...
-              </p>
-              <div class="" style="display: flex; justify-content: end;">
-                <button class="btn-get-started scrollto">Read More</button>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <div class="" style="display: flex; justify-content: center;">
-          <a href="research.html" class="btn-projects scrollto" style="color: aliceblue;">More!</a>
-        </div>
-      </div>
-
-      <!--       <div class="container-fluid justify-content-center">
-        <main id="main1">
-          <div class="card_res" id="card1">
-            <div class="card-top"><img class="card-image" alt="" src="" /></div>
-            <div class="card-mid">
-              <h4 class="card-title">Titre</h4>
-              <label class="card-desc">Description</label>
-              <div class="card-blur-zone"></div>
-            </div>
-          </div>
-          <div class="card_res" id="card2">
-            <div class="card-top"><img class="card-image" alt="" src="" /></div>
-            <div class="card-mid">
-              <h4 class="card-title">Titre</h4>
-              <label class="card-desc">Description</label>
-              <div class="card-blur-zone"></div>
-            </div>
-          </div>
-          <div class="card_res" id="card3">
-            <div class="card-top"><img class="card-image" alt="" src="" /></div>
-            <div class="card-mid">
-              <h4 class="card-title">Titre</h4>
-              <label class="card-desc">Description</label>
-              <div class="card-blur-zone"></div>
-            </div>
-          </div>
-        </main>
-
-      </div> -->
-    </section><!-- #services -->
-  </main>
-
-  <!--==========================
-    Footer
-  ============================-->
-  <footer id="footer">
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong>SCLab</strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-      </div>
-    </div>
-  </footer><!-- #footer -->
-
-  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-
-  <!-- JavaScript Libraries -->
-  <script src="lib/jquery/jquery.min.js"></script>
-  <script src="lib/jquery/jquery-migrate.min.js"></script>
-  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="lib/easing/easing.min.js"></script>
-  <script src="lib/superfish/hoverIntent.js"></script>
-  <script src="lib/superfish/superfish.min.js"></script>
-  <script src="lib/wow/wow.min.js"></script>
-  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-  <script src="lib/magnific-popup/magnific-popup.min.js"></script>
-  <script src="lib/sticky/sticky.js"></script>
-  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8HeI8o-c1NppZA-92oYlXakhDPYR7XMY"></script> -->
-  <!-- Contact Form JavaScript File -->
-  <!-- <script src="contactform/contactform.js"></script> -->
-
-  <!-- Template Main Javascript File -->
-  <script src="js/main.js"></script>
-  <script>
-    class YBCard {
-
-      constructor(id, title, description, image) {
-        this.idCard = id
-        this.titre = title
-        this.description = description
-        this.image = image
-      }
-
-      initCard() {
-        this.updateDom();
-        this.activateListeners();
-      }
-
-      updateDom() {
-        var cardDom = document.getElementById(this.idCard)
-        if (cardDom.hasChildNodes()) {
-          var cardDomImage = cardDom.getElementsByClassName('card-image')[0]
-          cardDomImage.src = this.image;
-
-          var cardDomTitle = cardDom.getElementsByClassName('card-title')[0]
-          cardDomTitle.innerHTML = this.titre;
-
-          var cardDomDesc = cardDom.getElementsByClassName('card-desc')[0]
-          cardDomDesc.innerHTML = this.description;
+            a.style.width = text.clientHeight + 50 + "px";
+            a.style.height = text.clientHeight + 50 + "px"
         }
-      }
 
-      activateListeners() {
-        var cardDom = document.getElementById(this.idCard)
-        cardDom.addEventListener("mouseover", function (event) {
-          var cardDomTitle = cardDom.getElementsByClassName('card-title')[0]
-          var cardDomDesc = cardDom.getElementsByClassName('card-desc')[0]
-          var cardDomMiddle = cardDom.getElementsByClassName('card-mid')[0]
-          var cardMiddleHeight = cardDomTitle.offsetHeight + cardDomDesc.offsetHeight;
-          cardDomMiddle.style.height = cardMiddleHeight + 100 + "px";
-        }, false);
-
-        cardDom.addEventListener("mouseout", function (event) {
-          var cardDomMiddle = cardDom.getElementsByClassName('card-mid')[0]
-          cardDomMiddle.style.height = 200 + "px";
-        }, false);
-      }
-    }
-
-    var card1 = new YBCard("card1", "(Bio)molecular recognition and signalling", " Allosteric regulation is a crucial component in biochemical pathways, where ligand binding to an allosteric site modulates the enzymatic activity at a distant functional site.There is rapid growth in interest toward rational design of allosteric drugs.PDZ domain proteins(frequently encountered in signaling protein complexes) are classic examples of allostery without significant structural changes (dynamic allostery), where ligand binding leads to modulation in distal...", "https://www.pnas.org/cms/10.1073/pnas.1705311114/asset/42c74cc9-817b-4839-a144-6fa718f86a7a/assets/graphic/pnas.1705311114fig04.jpeg")
-    card1.initCard();
-
-    var card2 = new YBCard("card2", "Context dependent properties of interfacial and confined water", "Water confined within reverse micelles (RMs) exhibits distinct properties: 'interfacial water' with slowed dynamics and 'core water' resembling bulk water depending on RM size. Using molecular dynamics simulations, we explore these differences and compare them with water -in -oil nanodroplets.Results show that RM' s charged interface significantly affects structural ordering and dynamics through electrostatic and hydrogen bonding... ", "https://pubs.acs.org/cms/10.1021/acs.biochem.6b01042/asset/images/medium/bi-2016-01042c_0009.gif");
-    card2.initCard();
-
-    var card3 = new YBCard("card3", "Protein misfolding and aggregation", "                Using approximately 65 μs of replica exchange molecular dynamics simulations, we have constructed temperature - dependent conformational free energy landscapes for human prion protein.These reveal multiple metastable states stabilized by non - native contacts and hydrogen bonds, facilitating protein misfolding.We identified metastable states with high β - content(∼30–40 %) and low α - content(∼10–20 %), potentially precursors to PrPSC oligomers.These states involve the unstructured...", "https://pubs.rsc.org/en/Image/Get?imageInfo.ImageType=GA&imageInfo.ImageIdentifier.ManuscriptID=C6CP04378J&imageInfo.ImageIdentifier.Year=2016");
-    card3.initCard();
-
-  </script>
-  <script>
-    target = document.getElementsByClassName("about-img")[0];
-    pre = document.getElementById("my-intro");
-    // target.style.width = "100%";
-    target.style.width = pre.clientWidth + "px";
-    target.style.height = pre.clientWidth + "px";
-
-  </script>
-  <script data-main="select.js" src="js/require.js"></script>
-  <script>
-    ;
-    go();
-    window.addEventListener('resize', go);
-
-    function go() {
-      var a = document.getElementById("viewer");
-      var text = document.getElementById("intro-text");
-      console.log(text.clientWidth);
-
-      a.style.width = text.clientHeight - 50 + "px";
-      a.style.height = text.clientHeight - 50 + "px"
-    }
-
-  </script>
+    </script>
 </body>
 
 </html>

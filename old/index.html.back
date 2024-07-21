@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>SCLab</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700"
+    rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+  <!-- <link href="css/custom.css" rel="stylesheet"> -->
+
+  <!-- =======================================================
+    Theme Name: Reveal
+    Theme URL: https://bootstrapmade.com/reveal-bootstrap-corporate-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
+
+
+  <style>
+    .outline {
+      border: #000 solid 4px;
+      box-shadow: 8px 8px 0 #000;
+    }
+
+    .btn-get-started:hover {
+  background:#000;
+  color: #a9aebb;
+}
+    /* styles for '...' */
+  </style>
+</head>
+
+<body id="body">
+
+  <!--==========================
+    Top Bar
+  ============================-->
+  <section id="topbar" class="d-none d-lg-block">
+    <div class="container clearfix">
+      <div class="contact-info float-left">
+        <i class="fa fa-envelope-o"></i> <a href="mailto:contact@example.com">sumanc@bose.res.in</a>
+        <i class="fa fa-phone"></i> +91-33-2335 1313
+      </div>
+      <div class="social-links float-right">
+        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+        <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <h1><a href="#body" class="scrollto">SC<span>Lab</span><sup style="color: crimson;">@SNBNCBS</sup></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="#body"><img src="img/logo.png" alt="" title="" /></a>-->
+      </div>
+
+      <nav id="nav-menu-container"">
+        <ul class=" nav-menu">
+        <li class="menu-active"><a href="#">Home</a></li>
+        <!-- <li><a href="#about">About Us</a></li> -->
+        <li><a href="research.html">Research</a></li>
+        <li><a href="publication.html">Publication</a></li>
+        <li><a href="members.html">Team</a></li>
+        <li><a href="positions.html">Positions</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li class="menu-has-children"><a href="">More</a>
+          <ul>
+        <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">SNBNCBS</a></li>
+            <li><a href="#">GitHub</a></li>
+          </ul>
+        </li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+  <!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro">
+
+    <!--     <div class="intro-content">
+    </div> -->
+
+    <div id="intro-carousel" class="owl-carousel">
+      <div class="item" style="background-image: url('img/group5.png');"></div>
+      <div class="item" style="background-image: url('img/group2.png');"></div>
+      <div class="item"
+        style="background-image: url('https://lh3.googleusercontent.com/p/AF1QipNiHAmCHkIiSCIbruEeWb0VDQVXul1rAz1-8Oqd=s680-w680-h510');">
+      </div>
+      <div class="item" style="background-image: url('img/group1.png');"></div>
+      <div class="item" style="background-image: url('img/group4.jpg');"></div>
+    </div>
+
+  </section>
+
+  <!-- #intro -->
+
+  <main id="main">
+
+    <!--==========================
+      About Section
+    ============================-->
+    <section id="about" class="wow fadeInUp">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 about-img">
+            <img src="img/Combined.png" alt="">
+          </div>
+
+          <div class="col-lg-6 content" style="margin: auto;">
+            <h2>Who we are</h2>
+            <h3>CBS Department, SNBNCBS, Kolkata.</h3>
+
+            <ul>
+              <li style="line-height: 2.0em;">
+
+                Welcome to the Computational Biophysical Chemistry group at SNBNCBS, Department of Chemical and
+                Biological Sciences. We are a multidisciplinary team merging expertise from Physics, Chemistry, and
+                Biotechnology. Our research focuses on applying advanced computational methods rooted in statistical
+                mechanics to solve interdisciplinary challenges in chemistry, physics, and biology. Using a molecular
+                thermodynamics approach, we investigate molecular interactions and dynamics from small molecules like
+                water to large biomolecular assemblies and amphiphilic molecule self-assembly. Join us as we explore the
+                forefront of these fields and drive transformative discoveries.
+              </li>
+
+              <!-- <li><i class="ion-android-checkmark-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li> -->
+              <!-- <li><i class="ion-android-checkmark-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li> -->
+              <!-- <li><i class="ion-android-checkmark-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li> -->
+            </ul>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <section id="services">
+      <div class="container">
+        <div class="section-header">
+          <h2 style="text-transform: none;">What we do</h2>
+          <p style="line-height: 2.0em;">
+            The broad area of our research is computational molecular biophysics and theoretical physical chemistry. The
+            primary goal is to employ state of the art computational methodologies primarily based on statistical
+            mechanics to solve realistic problems in the interdisciplinary areas of chemistry, physics and biology.
+            Overall, we take an approach of molecular thermodynamics to connect molecular interactions and dynamics to
+            their function and properties. We work on a wide range of problems starting from small molecules (as small
+            as water!) to large biomolecular assemblies and self-assembly of amphiphilic molecules.
+          </p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6">
+            <div class="box wow fadeInLeft" style="border: #000 solid 4px; box-shadow: 8px 8px 0 #000;">
+              <div class="icon">
+                <img
+                  src="https://www.pnas.org/cms/10.1073/pnas.1705311114/asset/42c74cc9-817b-4839-a144-6fa718f86a7a/assets/graphic/pnas.1705311114fig04.jpeg">
+
+              </div>
+              <h4 class="title"><a href="">(Bio)molecular recognition and signalling</a></h4>
+              <div>
+
+              <p class="description">
+                Allosteric regulation is a crucial component in biochemical pathways, where ligand binding to an
+                allosteric site modulates the enzymatic activity at a distant functional site. There is rapid growth in
+                interest toward rational design of allosteric drugs. PDZ domain proteins (frequently encountered in
+                signaling protein complexes) are classic examples of allostery without significant structural changes
+                (dynamic allostery), where ligand binding leads to modulation in distal...
+              </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="box wow fadeInRight" style="border: #000 solid 4px; box-shadow: 8px 8px 0 #000;">
+              <div class="icon">
+                <img
+                  src="https://pubs.rsc.org/en/Image/Get?imageInfo.ImageType=GA&imageInfo.ImageIdentifier.ManuscriptID=C6CP04378J&imageInfo.ImageIdentifier.Year=2016">
+              </div>
+              <h4 class="title" style="color:red;"><a href="" style="color: darkblue;">Context dependent properties of interfacial and confined water</a></h4>
+              <p class="description" style="color:midnightblue;">
+                Water confined within reverse micelles (RMs) exhibits distinct properties: "interfacial water" with
+                slowed dynamics and "core water" resembling bulk water depending on RM size
+                . Using molecular dynamics simulations, we explore these differences and compare them with
+                water-in-oil nanodroplets. Results show that RM's charged interface significantly affects structural
+                ordering and dynamics through electrostatic and hydrogen bonding...
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="box wow fadeInLeft" data-wow-delay="0.2s"
+              style="border: #000 solid 4px; box-shadow: 8px 8px 0 #000;">
+              <div class="icon">
+                <img
+                  src="https://pubs.acs.org/cms/10.1021/acs.biochem.6b01042/asset/images/medium/bi-2016-01042c_0009.gif">
+              </div>
+              <h4 class="title"><a href="">Protein misfolding and aggregation</a></h4>
+              <p class="description block-with-text" id="trunc3">
+                Using approximately 65 μs of replica exchange molecular dynamics simulations, we have constructed
+                temperature-dependent conformational free energy landscapes for human prion protein. These reveal
+                multiple metastable states stabilized by non-native contacts and hydrogen bonds, facilitating protein
+                misfolding. We identified metastable states with high β-content (∼30–40%) and low α-content (∼10–20%),
+                potentially precursors to PrPSC oligomers. These states involve the unstructured...
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="box wow fadeInRight" data-wow-delay="0.2s"
+              style="border: #000 solid 4px; box-shadow: 8px 8px 0 #000;">
+              <div class="icon">
+                <img
+                  src="https://pubs.acs.org/cms/10.1021/acs.jpcb.8b02285/asset/images/medium/jp-2018-02285y_0008.gif">
+              </div>
+              <h4 class="title"><a href="">Nucleation and growth in the context of phase transition like phenomena</a>
+              </h4>
+              <p class="description">
+                In experimental studies, it has been observed that the presence of sodium dodecyl sulfate (SDS)
+                significantly increases the kinetics of hydrate formation and the final water-to-hydrate conversion
+                ratio. In this study, we intend to understand the molecular mechanism behind the effect of SDS on the
+                formation of methane hydrate through molecular dynamics simulation. Hydrate formation conditions similar
+                to that of...
+              </p>
+            </div>
+          </div>
+
+        </div>
+        <div class="" style="display: flex; justify-content: center;">
+        <a href="research.html" class="btn-get-started scrollto" style="color: aliceblue;">More!</a>
+        </div>
+      </div>
+    </section><!-- #services -->
+  </main>
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>SCLab</strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/magnific-popup/magnific-popup.min.js"></script>
+  <script src="lib/sticky/sticky.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8HeI8o-c1NppZA-92oYlXakhDPYR7XMY"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
