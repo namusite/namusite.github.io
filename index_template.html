@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Travela - Tourism Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600&family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        #myVideo {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            left: 0;
+            /* min-width: 100%; */
+            /* width: 100vw; */
+            /* min-height: 70vh; */
+            height: 70vh;
+            justify-content: center;
+            justify-items: center;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+            <a href="" class="navbar-brand p-0">
+                <h1 class="m-0">Chakrabarty Lab</h1>
+                <!-- <img src="img/logo.png" alt="Logo"> -->
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="research.html" class="nav-item nav-link">Research</a>
+                    <a href="services.html" class="nav-item nav-link">Publications</a>
+                    <a href="team.html" class="nav-item nav-link">Team</a>
+                    <a href="blog.html" class="nav-item nav-link">Positions</a>
+                    <a href="blog.html" class="nav-item nav-link">Gallery</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Carousel Start -->
+        <div class="carousel-header">
+            <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#carouselId" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#carouselId" data-bs-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <!-- <img src="img/carousel-2.jpg" class="img-fluid" alt="Image"> -->
+                        <video autoplay muted loop id="myVideo" class="img-fluid w-100">
+                            <source src="img/bg.mp4" type="video/mp4">
+                        </video>
+                        <div class="carousel-caption">
+                            <div class="p-3" style="max-width: 900px;">
+                                <h4 class="text-white text-uppercase fw-bold mb-4" style="letter-spacing: 3px;">
+                                    S.N.B.N.C.B.S</h4>
+                                <h1 class="display-2 text-capitalize text-white mb-4">Computational Biophysical
+                                    Chemistry Group</h1>
+                                <p class="mb-5 fs-5">
+                                    Department of Chemical and Biological Sciences
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Carousel End -->
+    </div>
+    <!-- Navbar & Hero End -->
+    <!-- Announcement Start -->
+    <!-- Announcement End -->
+
+    <!-- About Start -->
+    <div class="container-fluid about py-5">
+        <div class="container py-2">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-5">
+                    <div class="h-100"> <img src="img/g_din.jpg" class="img-fluid w-100 h-100" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-7"
+                    style="background: linear-gradient(rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url(img/about-img-1.png);">
+                    <h5 class="section-about-title pe-3">About Us</h5>
+                    <h1 class="mb-4">Welcome to <span class="text-primary">SCLab</span></h1>
+                    <p class="mb-4">
+                        The broad area of our research is computational molecular biophysics and theoretical physical
+                        chemistry. The primary
+                        goal is to employ state of the art computational methodologies primarily based on statistical
+                        mechanics to solve
+                        realistic problems in the interdisciplinary areas of chemistry, physics and biology.
+                    </p>
+                    <p class="mb-4">
+                        Overall, we
+                        take an approach of
+                        molecular thermodynamics to connect molecular interactions and dynamics to their function and
+                        properties. We work on a
+                        wide range of problems starting from small molecules (as small as water!) to large biomolecular
+                        assemblies and
+                        self-assembly of amphiphilic molecules.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+    <!-- Research Start -->
+    <div class="container-fluid ExploreTour">
+        <div class="container py-5">
+            <div class="mx-auto text-center mb-5" style="max-width: 900px;">
+                <h5 class="section-title px-3">Research</h5>
+                <h1 class="mb-4">Major Research Interests</h1>
+                <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum tempore nam, architecto
+                    doloremque velit explicabo? Voluptate sunt eveniet fuga eligendi! Expedita laudantium fugiat
+                    corrupti eum cum repellat a laborum quasi.
+                </p>
+            </div>
+            <div class="tab-class text-center">
+
+                <div class="tab-content">
+                    <div id="NationalTab-1" class="tab-pane fade show p-0 active">
+                        <div class="row g-4">
+                            <div class="col-md-6 col-lg-4">
+                                <div class="national-item">
+                                    <img src="https://www.pnas.org/cms/10.1073/pnas.1705311114/asset/42c74cc9-817b-4839-a144-6fa718f86a7a/assets/graphic/pnas.1705311114fig04.jpeg"
+                                        class="img-fluid w-100 rounded" alt="Image">
+                                    <div class="national-content">
+                                        <div class="national-info">
+                                            <h4 class="text-white mb-2">(Bio)molecular recognition and
+                                                signalling</h4>
+                                            <a href="#" class="btn-hover text-white">Know More!<i
+                                                    class="fa fa-arrow-right ms-2"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="national-plus-icon">
+                                        <a href="#" class="my-auto"><i class="fas fa-link fa-2x text-white"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="national-item">
+                                    <img src="https://pubs.rsc.org/en/Image/Get?imageInfo.ImageType=GA&imageInfo.ImageIdentifier.ManuscriptID=C6CP04378J&imageInfo.ImageIdentifier.Year=2016"
+                                        class="img-fluid w-100 rounded" alt="Image">
+                                    <div class="national-content">
+                                        <div class="national-info">
+                                            <h4 class="text-white mb-2">Properties of interfacial and
+                                                confined water</h4>
+                                            <a href="#" class="btn-hover text-white">Know More!<i
+                                                    class="fa fa-arrow-right ms-2"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="national-plus-icon">
+                                        <a href="#" class="my-auto"><i class="fas fa-link fa-2x text-white"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="national-item">
+                                    <img src="https://pubs.acs.org/cms/10.1021/acs.jpcb.8b02285/asset/images/medium/jp-2018-02285y_0008.gif"
+                                        class="img-fluid w-100 rounded" alt="Image">
+                                    <div class="national-content">
+                                        <div class="national-info">
+                                            <h5 class="text-white text-uppercase mb-2">Nucleation and growth in phase
+                                                transition</h5>
+                                            <a href="#" class="btn-hover text-white">Know More!<i
+                                                    class="fa fa-arrow-right ms-2"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="national-plus-icon">
+                                        <a href="#" class="my-auto"><i class="fas fa-link fa-2x text-white"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="national-item">
+                                    <img src="https://pubs.acs.org/cms/10.1021/acs.biochem.6b01042/asset/images/medium/bi-2016-01042c_0009.gif"
+                                        class="img-fluid w-100 rounded" alt="Image">
+                                    <div class="national-content">
+                                        <div class="national-info">
+                                            <h5 class="text-white text-uppercase mb-2">Protein misfolding and
+                                                aggregation</h5>
+                                            <a href="#" class="btn-hover text-white">Know More! <i
+                                                    class="fa fa-arrow-right ms-2"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="national-plus-icon">
+                                        <a href="#" class="my-auto"><i class="fas fa-link fa-2x text-white"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="national-item">
+                                    <img src="img/figure2.jpg" class="img-fluid w-100 rounded" alt="Image">
+                                    <div class="national-content">
+                                        <div class="national-info">
+                                            <h5 class="text-white text-uppercase mb-2"> Machine Learning in molecular
+                                                dynamics</h5>
+                                            <a href="#" class="btn-hover text-white">Know More!<i
+                                                    class="fa fa-arrow-right ms-2"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="national-plus-icon">
+                                        <a href="#" class="my-auto"><i class="fas fa-link fa-2x text-white"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="national-item">
+                                    <img src="img/toc.png" class="img-fluid w-100 rounded" alt="Image">
+                                    <div class="national-content">
+                                        <div class="national-info">
+                                            <h5 class="text-white text-uppercase mb-2">De-NOVO Drug design and Property
+                                                prediction</h5>
+                                            <a href="#" class="btn-hover text-white">Know More!<i
+                                                    class="fa fa-arrow-right ms-2"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="national-plus-icon">
+                                        <a href="#" class="my-auto"><i class="fas fa-link fa-2x text-white"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex align-items-center justify-content-center py-5">
+                    <a class="btn-hover-bg btn btn-primary rounded-pill text-white py-3 px-5"
+                        href="research.html">Discover More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Research End -->
+
+    <!-- Positions Start -->
+    <div class="container-fluid booking py-5">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6">
+                    <h5 class="section-booking-title pe-3">Open positions</h5>
+                    <h1 class="text-white mb-2">Join Us!</h1>
+                    <p class="text-white mb-2">
+                        We are looking for bright and motivated students who are curious to unravel the mysteries of
+                        nature from a molecular
+                        point of view! Interest in physical chemistry, chemical physics, biophysics, statistical
+                        mechanics and programming are
+                        desirable.
+                    </p>
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="text-white mb-2">PhD. positions</h1>
+                    <p class="text-white">
+                        For the admission process in our centre, please consult the <span class="text-warning">official
+                            admission page.</span>
+                    </p>
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="text-white mb-2">Postdoctoral positions</h1>
+                    <p class="text-white">
+                        If you are looking for a postdoctoral researcher position, please visit:
+                        <span class="text-warning">Advanced Postdoctoral
+                            Research Programme (APRP)</span>
+                    </p>
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="text-white mb-2">Project Students</h1>
+                    <p class="text-white">
+                        Short term project position or postdoctoral research positions might open up from time to time.
+                        Please feel free to
+                        directly contact us
+                        <span class="text-warning">(sumanc <at> bose <dot> res <dot> in)</span> if you are interested.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Positions End -->
+
+    <!-- Testimonial Start -->
+    <div class="container-fluid testimonial py-5">
+        <div class="container py-5">
+            <div class="mx-auto text-center mb-5" style="max-width: 900px;">
+                <h5 class="section-title px-3">Colaborators</h5>
+                <h1 class="mb-0">National/international colaborators</h1>
+            </div>
+            <div class="testimonial-carousel owl-carousel">
+                <div class="testimonial-item text-center rounded pb-4">
+                    <div class="testimonial-comment rounded p-5">
+                    </div>
+                    <div class="testimonial-img p-1">
+                        <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR2NrMvNfFx0bxRWCovcRo1tp8UjKBd48I0JxLBnjTH2Fc6owRM"
+                            class="img-fluid rounded-circle" alt="Image">
+                    </div>
+                    <div style="margin-top: -35px;">
+                        <h5 class="mb-0">Ruth Nussinov</h5>
+                        <p class="mb-0">Professor and Senior Principal Investigator
+                            <br> National Cancer Institute and Tel
+                            Aviv University
+                        </p>
+
+                    </div>
+                </div>
+                <div class="testimonial-item text-center rounded pb-4">
+                    <div class="testimonial-comment bg-light rounded p-5">
+                    </div>
+                    <div class="testimonial-img p-1">
+                        <img src="http://www.jcbose.ac.in/assets/uploads/thumb/faculty_feature_image_1486991141_15_170x170.jpg"
+                            class="img-fluid rounded-circle" alt="Image">
+                    </div>
+                    <div style="margin-top: -35px;">
+                        <h5 class="mb-0">Gautam Basu</h5>
+                        <p class="mb-0">Professor (retired)<br>
+                            Biophysics, Bose Institute</p>
+
+                    </div>
+                </div>
+                <div class="testimonial-item text-center rounded pb-4">
+                    <div class="testimonial-comment bg-light rounded p-5">
+
+                    </div>
+                    <div class="testimonial-img p-1">
+                        <img src="https://www.iiserkol.ac.in/static/images/people/faculty/supratim.banerjee.png"
+                            class="img-fluid rounded-circle" alt="Image">
+                    </div>
+                    <div style="margin-top: -35px;">
+                        <h5 class="mb-0">Supratim Banerjee</h5>
+                        <p class="mb-0">Associate Professor<br>
+                            DCS, IISERK </p>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center rounded pb-4">
+                    <div class="testimonial-comment bg-light rounded p-5">
+
+                    </div>
+                    <div class="testimonial-img p-1">
+                        <img src="https://che.iitm.ac.in/wp-content/uploads/2021/07/IMG_3065.jpg"
+                            class="img-fluid rounded-circle" alt="Image">
+                    </div>
+                    <div style="margin-top: -35px;">
+                        <h5 class="mb-0">Rajnish Kumar</h5>
+                        <p class="mb-0">Proffesor<br>
+                            Chemical Engineering, IITM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+    <div class="container-fluid booking py-5">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6">
+                    <h5 class="section-booking-title pe-3">contact us</h5>
+                    <h1 class="text-white mb-4">Send us a message</h1>
+                    <p class="text-white mb-4">
+                        We are open to work with new collaborators. If you are interested in working with us, please
+
+                        <span class="text-warning">contact us</span>
+
+                    </p>
+                </div>
+                <div class="col-lg-6">
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control bg-white border-0" id="name"
+                                        placeholder="Your Name">
+                                    <label for="name">Your Name</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control bg-white border-0" id="email"
+                                        placeholder="Your Email">
+                                    <label for="email">Your Email</label>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-floating date" id="date3" data-target-input="nearest">
+                                    <input type="text" class="form-control bg-white border-0" id="datetime"
+                                        placeholder="Date & Time" data-target="#date3" data-toggle="datetimepicker" />
+                                    <label for="datetime">Subject</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea class="form-control bg-white border-0" placeholder="Special Request"
+                                        id="message" style="height: 160px"></textarea>
+                                    <label for="message">Message</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary text-white w-100 py-3" type="submit">Send</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Start -->
+    <footer id="footer" class="footer" style="background-color: #14141f; color: #f5f5f5;">
+        <div class="container footer-top">
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6 footer-about">
+                    <a href="index.html" class="d-flex align-items-center">
+                        <span class="sitename">Chakrabarty Lab</span>
+                    </a>
+                    <div class="footer-contact pt-3">
+                        <p>SNBNCBS, Kolkata-106</p>
+                        <p>CBS Department</p>
+                        <p class="mt-3"><strong>Phone:</strong> <span>+91-33-2335 1313/</span></p>
+                        <p><strong>Email:</strong> <span>sumanc@bose.res.in</span></p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-3 footer-links">
+                    <h4 class="text-light">Useful Links</h4>
+                    <ul>
+                        <li><i class="bi bi-chevron-right"></i> <a href="bose.res.in">SNBNCBS</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="#">Github</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="#">Google Scholar</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="#">Admission page</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-12">
+                    <h4 class="text-light">Follow Us</h4>
+                    <p>
+                        Follow us on social media platform provided by the link below to get notifications.
+                    </p>
+                    <div class="main__socials py-2">
+                        <button class="Link__facebook">
+                            <i class="fab fa-facebook facebook" aria-hidden="true" style="font-size: 30px;"></i>
+                        </button>
+                        <button class="Link__linkedin">
+                            <i class="fab fa-linkedin linkedin" aria-hidden="true" style="font-size: 30px;"></i>
+                        </button>
+                        <button class="Link__instagram">
+                            <i class="fab fa-instagram instagram" aria-hidden="true" style="font-size: 30px;"></i>
+                        </button>
+                        <button class="Link__twitter">
+                            <i class="fab fa-twitter twitter" aria-hidden="true" style="font-size: 30px;"></i>
+                        </button>
+                        <button class="Link__github">
+                            <i class="fab fa-github github" aria-hidden="true" style="font-size: 30px;"></i>
+                        </button>
+                        <button class="Link__youtube">
+                            <i class="fab fa-youtube" aria-hidden="true" style="font-size: 30px;"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright text-body py-4">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-12 text-center mb-md-0">
+                    <i class="fas fa-copyright me-2"></i><a class="text-white" href="#">namusite.com</a>, All right
+                    reserved.
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Copyright End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-primary-outline-0 btn-md-square back-to-top"><i
+            class="fa fa-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
