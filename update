@@ -1,0 +1,4 @@
+#!/bin/bash
+python announce_update.py
+python member_update.py
+python publication_update.py

@@ -406,6 +406,54 @@
 
 /*** Single Page Hero Header End ***/
 
+/*** Gallery Hero Header Start ***/
+.bg-gallery {
+    background: linear-gradient(rgba(19, 53, 123, 0.5), rgba(19, 53, 123, 0.5)), url(../img/gallery_bg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 200px 0 50px 0;
+}
+
+.bg-gallery .breadcrumb-item a {
+    color: var(--bs-secondary) !important;
+}
+
+/*** Gallery Hero Header End ***/
+
+/*** Positions Hero Header Start ***/
+.bg-positions {
+    background: linear-gradient(rgba(19, 53, 123, 0.5), rgba(19, 53, 123, 0.5)), url(../img/positions.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 200px 0 50px 0;
+}
+
+.bg-positions .breadcrumb-item a {
+    color: var(--bs-secondary) !important;
+}
+
+/*** Positions Hero Header End ***/
+
+/*** Research Hero Header Start ***/
+.bg-research {
+    background: linear-gradient(rgba(19, 53, 123, 0.5), rgba(19, 53, 123, 0.5)), url(../img/research.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 200px 0 50px 0;
+}
+
+.bg-research .breadcrumb-item a {
+    color: var(--bs-secondary) !important;
+}
+
+/*** Research Hero Header End ***/
+
 /*** Publication page Hero Header Start ***/
 .bg-publication {
     background: linear-gradient(rgba(19, 53, 123, 0.7), rgba(19, 53, 123, 0.7)), url(../img/wordcloud.jpeg);
@@ -413,7 +461,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    padding: 100px 0 50px 0;
+    padding: 200px 0 50px 0;
 }
 
 .bg-publication .breadcrumb-item a {
@@ -429,7 +477,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    padding: 150px 0 50px 0;
+    padding: 200px 0 50px 0;
 }
 
 .bg-contact .breadcrumb-item a {
@@ -446,7 +494,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    padding: 100px 0 50px 0;
+    padding: 200px 0 50px 0;
 }
 
 .bg-members .breadcrumb-item a {
