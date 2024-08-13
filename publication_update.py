@@ -1,3 +1,4 @@
+import contextlib
 import json
 import numpy as np
 
@@ -35,11 +36,8 @@ pub_data = json.load(pub_data)
 
 assemble_year = []
 for data in pub_data:
-    try:
+    with contextlib.suppress(Exception):
         assemble_year.append(data['year'])
-    except Exception:
-        pass
-
 years = np.sort(np.unique(assemble_year))[::-1]
 years = years[np.where(years>'2009')]
 
@@ -49,11 +47,9 @@ temp_year = '2024'
 for year in years:
     ordered_dict[str(year)] = []
 for data in pub_data:
-    try:
+    with contextlib.suppress(Exception):
         year = data['year']
         ordered_dict[year].append(data)
-    except Exception:
-        pass
 
 def pub_format(title, authors, publication, link):
     return f"""                                    <div class="card my-3">
