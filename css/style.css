@@ -440,7 +440,7 @@
 
 /*** Research Hero Header Start ***/
 .bg-research {
-    background: linear-gradient(rgba(19, 53, 123, 0.5), rgba(19, 53, 123, 0.5)), url(../img/research.jpeg);
+    background: linear-gradient(rgba(19, 53, 123, 0.5), rgba(19, 53, 123, 0.5)), url(../img/res.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
