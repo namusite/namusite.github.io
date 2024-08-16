@@ -622,7 +622,7 @@
 
 
 /*** Packages Start ***/
-.packages .packages-item{
+.packages .packages-item {
     position: relative;
     overflow: hidden;
     transition: 0.5s;
@@ -1707,4 +1707,14 @@
 .faq .faq-container .faq-active .faq-toggle {
     transform: rotate(90deg);
     color: rgb(0, 64, 214);
+}
+
+#watermark {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    text-align: right;
+    opacity: 0.5;
+    z-index: 99;
+    color: red;
 }
