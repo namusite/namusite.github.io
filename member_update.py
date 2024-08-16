@@ -61,8 +61,6 @@ def add_mem(name, desig, sub, img, fb, tw, insta, linkedin, style = 1, interest 
                                         class="fab fa-facebook-f"></i></a>
                                 <a class="btn btn-square btn-primary rounded-circle mx-1" href="{tw}"><i
                                         class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square btn-primary rounded-circle mx-1" href="{insta}"><i
-                                        class="fab fa-instagram"></i></a>
                                 <a class="btn btn-square btn-primary rounded-circle mx-1" href="{linkedin}"><i
                                         class="fab fa-linkedin-in"></i></a>
                                 </div>
