@@ -1,4 +1,4 @@
 #!/bin/bash
-python announce_update.py
-python member_update.py
-python publication_update.py
+python ./scripts/announce_update.py
+python ./scripts/member_update.py
+python ./scripts/publication_update.py

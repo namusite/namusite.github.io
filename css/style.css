@@ -440,7 +440,7 @@
 
 /*** Research Hero Header Start ***/
 .bg-research {
-    background: linear-gradient(rgba(19, 53, 123, 0.5), rgba(19, 53, 123, 0.5)), url(../img/res.jpg);
+    background: linear-gradient(rgba(19, 53, 123, 0.5), rgba(19, 53, 123, 0.5)), url(../img/research.webp);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -747,11 +747,13 @@
 }
 
 .ExploreTour .tab-class .nav-item a.active {
-    background: var(--bs-primary) !important;
+    /* background: var(--bs-primary) !important; */
+    background: #03a9f4;
 }
 
 .ExploreTour .tab-class .nav-item a.active span {
-    color: var(--bs-white) !important;
+    /* color: var(--bs-white) !important; */
+    color: #03a9f4 !important;
 }
 
 
@@ -1361,8 +1363,6 @@
 }
 
 /*** copyright end ***/
-:where
-
 /*--------------------------------------------------------------
     # Global Footer
 --------------------------------------------------------------*/
@@ -1484,6 +1484,20 @@
     transition: 0.2s ease-in-out;
 }
 
+.Link__email {
+    padding: 0.8em;
+    outline: none;
+    border: none;
+    background: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+        rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: 0.2s ease-in-out;
+}
+
+.email {
+    color: #ff0000;
+}
+
 .instagram {
     color: #cc39a4;
 }
@@ -1559,6 +1573,18 @@
 }
 
 .Link__instagram:hover .instagram {
+    fill: white;
+    color: white;
+
+}
+
+.Link__email:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: #ff0000;
+}
+
+.Link__email:hover .email {
     fill: white;
     color: white;
 
@@ -1717,4 +1743,62 @@
     opacity: 0.5;
     z-index: 99;
     color: red;
+}
+
+.btn-hover {
+    background: transparent;
+    border: 1px solid #fff;
+    color: #ffffff;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.5s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.btn-hover:hover {
+    background: #b2fcff;
+    color: #ff0000;
+}
+
+.link {
+    background-image: linear-gradient(to right,
+            #54b3d6,
+            #54b3d6 50%,
+            #d1a206 50%);
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 5px;
+    position: relative;
+    color: #00e27b;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.link:before {
+    content: '  ';
+    background: #54b3d6;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+.link:hover {
+    background-position: 0;
+}
+
+.link:hover::before {
+    width: 100%;
+    color: #00e27b;
 }
