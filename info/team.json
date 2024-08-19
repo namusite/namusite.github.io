@@ -52,7 +52,8 @@
         "fb": "#", 
         "tw": "#",
         "insta": "#", 
-        "linkedin": "#"}, 
+        "linkedin": "#",
+        "mail":"#"}, 
         
         {"name": "Sayari Bhattacharya", 
         "desig": "JRF", 
@@ -83,19 +84,31 @@
          "img": "./img/ToonMe_Saheb.jpg", 
          "fb": "#", 
          "tw": "#", 
-         "insta": "#", 
-         "linkedin": "#"},
+         "mail": "#", 
+         "linkedin": "#", 
+         "interest":""},
         {"name": "Dr. Sameer Ahmed", 
         "desig": "Postdoctoral Fellow", 
         "img": "./img/ToonMe_Sameer2.jpg", 
         "fb": "#", 
         "tw": "#", 
-        "insta": "#", 
-        "linkedin": "#"}
+        "mail": "#", 
+        "linkedin": "#",
+        "interest":""}
     ], 
 
     "project": [
-        {"name": "Muskan Sharma", "desig": "TRC Project", "img": "./img/ToonMe_Muskan.jpg", "fb": "#", "tw": "#", "insta": "#", "linkedin": "#"}
+        {
+            "name": "Muskan Sharma",
+            "desig": "TRC Project",
+            "img": "./img/ToonMe_Muskan.jpg",
+            "fb": "#",
+            "tw": "#",
+            "mail": "#",
+            "linkedin": "#",
+            "interest": "Drug designing",
+            "role": "PhD student"
+        }
     ], 
 
     "alumni": [
