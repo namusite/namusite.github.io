@@ -2,3 +2,8 @@
 python ./scripts/announce_update.py
 python ./scripts/member_update.py
 python ./scripts/publication_update.py
+push ()
+{
+  git add . && git commit -m $1 && git push origin main  
+}
+push $1
